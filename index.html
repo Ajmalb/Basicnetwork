@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajmal Network Academy | ELV, CCTV & Computer Hardware Malayalam Master Platform</title>
+  <meta name="description" content="അജ്മൽ നെറ്റ്‌വർക്ക് അക്കാദമി - ELV സിസ്റ്റങ്ങൾ, നെറ്റ്‌വർക്കിംഗ് അടിസ്ഥാനങ്ങൾ, സിസിടിവി ക്യാമറ ഇൻസ്റ്റാളേഷൻ, അനലോഗ് vs ഐപി ക്യാമറ, RJ45 കളർ കോഡിംഗ്, കീസ്റ്റോൺ പഞ്ച് ഡൗൺ, കമ്പ്യൂട്ടർ ഹാർഡ്‌വെയർ മലയാളം ടെക്സ്റ്റ് ഗൈഡ്.">
+
+  <!-- Google Fonts: Noto Sans Malayalam, Manjari & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Noto+Sans+Malayalam:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">☰</button>
+      <div class="brand-logo-icon">⚡</div>
+      <div class="brand-info">
+        <h1>
+          <span>AJMAL NETWORK</span>
+          <span class="highlight">ACADEMY</span>
+          <span class="badge badge-cyan">മലയാളം</span>
+        </h1>
+        <p>അജ്മൽ നെറ്റ്‌വർക്ക് അക്കാദമി | YouTube: UCQuK-60lo7wk4iojdClBKbw (No Videos • Pure Content)</p>
+      </div>
+    </div>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <a href="https://www.youtube.com/channel/UCQuK-60lo7wk4iojdClBKbw" target="_blank" rel="noopener noreferrer" class="youtube-btn" title="Ajmal Network Academy YouTube ചാനൽ സന്ദർശിക്കുക">
+        <svg class="youtube-icon-svg" viewBox="0 0 24 24">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        <span>YouTube Channel</span>
+      </a>
+
+      <div class="search-box-header">
+        <svg class="search-icon-svg" viewBox="0 0 24 24">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+        <input type="text" id="globalSearchInput" placeholder="തിരയുക... (ഉദാ: RJ45, ക്യാമറ, റാം, സ്വിച്ച്)">
+      </div>
+
+      <button class="print-btn trigger-print" title="ടെക്നീഷ്യൻ ചീറ്റ് ഷീറ്റ് പ്രിന്റ് ചെയ്യുക">🖨️</button>
+      <button class="theme-toggle-btn" id="themeToggleBtn" title="ഡാർക്ക് / ലൈറ്റ് മോഡ് മാറ്റുക">☀️</button>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="layout-container">
+
+    <!-- Left Navigation Sidebar -->
+    <aside class="app-sidebar" id="appSidebar">
+      <div class="sidebar-category-title">പ്രധാന വിഷയങ്ങൾ (Modules)</div>
+      <ul class="sidebar-nav-list">
+        <li class="sidebar-nav-item">
+          <a class="nav-link active" data-target="section-networking">
+            <span class="icon">🌐</span>
+            <span class="title">1. ELV & നെറ്റ്‌വർക്കിംഗ് അടിസ്ഥാനങ്ങൾ</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-camera-install">
+            <span class="icon">📹</span>
+            <span class="title">2. ക്യാമറ ഇൻസ്റ്റാളേഷൻ ഗൈഡ്</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-analogue-ip">
+            <span class="icon">🔄</span>
+            <span class="title">3. അനലോഗ് vs ഐപി ക്യാമറ</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-rj45">
+            <span class="icon">🔌</span>
+            <span class="title">4. RJ45 കളർ കോഡും ക്രിമ്പിംഗും</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-keystone">
+            <span class="icon">🔲</span>
+            <span class="title">5. കീസ്റ്റോൺ ജാക്ക് & I/O പഞ്ച് ഡൗൺ</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-elv-systems">
+            <span class="icon">🏢</span>
+            <span class="title">6. മറ്റ് പ്രധാന ഇ.എൽ.വി സിസ്റ്റങ്ങൾ</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-computer-hardware">
+            <span class="icon">💻</span>
+            <span class="title">7. കമ്പ്യൂട്ടർ ഹാർഡ്‌വെയർ അടിസ്ഥാനങ്ങൾ</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-category-title" style="margin-top: 14px;">പ്രാക്ടിക്കൽ ടൂളുകൾ</div>
+      <ul class="sidebar-nav-list">
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-tools">
+            <span class="icon">🧮</span>
+            <span class="title">ഇന്ററാക്ടീവ് കാൽക്കുലേറ്ററുകൾ</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-cheatsheet">
+            <span class="icon">📑</span>
+            <span class="title">ടെക്നീഷ്യൻ ചീറ്റ് ഷീറ്റ് (Print)</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-quiz">
+            <span class="icon">📝</span>
+            <span class="title">സെൽഫ് അസസ്‌മെന്റ് ക്വിസ്</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="nav-link" data-target="section-glossary">
+            <span class="icon">📖</span>
+            <span class="title">മലയാളം IT & ELV പദാവലി</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- YouTube Channel Card in Sidebar -->
+      <div class="sidebar-channel-card">
+        <span class="channel-badge">Official YouTube Channel</span>
+        <h4>Ajmal Network Academy</h4>
+        <p>Channel ID: <code>UCQuK-60lo7wk4iojdClBKbw</code></p>
+        <a href="https://www.youtube.com/channel/UCQuK-60lo7wk4iojdClBKbw" target="_blank" rel="noopener noreferrer" class="youtube-btn" style="width: 100%; justify-content: center; font-size: 0.78rem; padding: 7px 10px;">
+          <svg class="youtube-icon-svg" viewBox="0 0 24 24" style="width:15px; height:15px;">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <span>സബ്സ്ക്രൈബ് ചെയ്യുക</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- ==================================================================
+           MODULE 1: ELV & NETWORKING BASICS
+           ================================================================== -->
+      <section class="tab-section active" id="section-networking">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">Ajmal Network Academy</span>
+            <span class="badge badge-green">അടിസ്ഥാന പാഠങ്ങൾ</span>
+            <a href="https://www.youtube.com/channel/UCQuK-60lo7wk4iojdClBKbw" target="_blank" rel="noopener noreferrer" class="badge badge-red" style="text-decoration:none; color:#fff; background:#ef4444; border:none; display:inline-flex; align-items:center; gap:5px;">
+              ▶️ YouTube: UCQuK-60lo7wk4iojdClBKbw
+            </a>
+          </div>
+          <h2>അജ്മൽ നെറ്റ്‌വർക്ക് അക്കാദമി - ELV & നെറ്റ്‌വർക്കിംഗ് അടിസ്ഥാനങ്ങൾ</h2>
+          <p class="lead">
+            എന്താണ് എക്സ്ട്രാ ലോ വോൾട്ടേജ് (ELV)? കമ്പ്യൂട്ടർ നെറ്റ്‌വർക്കിന്റെ ഘടന, ഐപി അഡ്രസ്സിംഗ്, സ്വിച്ചുകൾ, റൂട്ടറുകൾ, സർവർ റാക്കുകൾ, സ്ട്രക്ച്ചേർഡ് കേബ്ലിംഗ് (Structured Cabling) എന്നിവയെക്കുറിച്ചുള്ള സമഗ്രമായ മലയാളം വിവരണം.
+          </p>
+
+          <div class="quick-stats-grid">
+            <div class="stat-card" data-jump="section-rj45" style="cursor: pointer;">
+              <div class="stat-icon">🔌</div>
+              <div class="stat-info">
+                <h5>ക്രിമ്പിംഗ്</h5>
+                <p>RJ45 T568A / T568B</p>
+              </div>
+            </div>
+            <div class="stat-card" data-jump="section-camera-install" style="cursor: pointer;">
+              <div class="stat-icon">📹</div>
+              <div class="stat-info">
+                <h5>സിസിടിവി</h5>
+                <p>Dome & Bullet IP</p>
+              </div>
+            </div>
+            <div class="stat-card" data-jump="section-tools" style="cursor: pointer;">
+              <div class="stat-icon">🧮</div>
+              <div class="stat-info">
+                <h5>കാൽക്കുലേറ്റർ</h5>
+                <p>CCTV Storage & Bandwidth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.1 What is ELV -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">⚡</span>
+              <div>
+                <h3>എന്താണ് ഇ.എൽ.വി (What is Extra Low Voltage - ELV)?</h3>
+                <small>ലൈറ്റ് കറന്റ് സിസ്റ്റംസ് (Light Current Systems) എന്നറിയപ്പെടുന്ന ഇലക്ട്രിക്കൽ മേഖല</small>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            ഇലക്ട്രിക്കൽ എൻജിനീയറിംഗിൽ മനുഷ്യർക്ക് വൈദ്യുതാഘാതം (Electric Shock) ഏൽക്കാത്ത വിധം അതീവ സുരക്ഷിതമായ കുറഞ്ഞ വോൾട്ടേജിൽ പ്രവർത്തിക്കുന്ന സിസ്റ്റങ്ങളെയാണ് <strong>Extra Low Voltage (ELV)</strong> അഥവാ <strong>ലൈറ്റ് കറന്റ് സിസ്റ്റംസ് (Light Current Systems)</strong> എന്ന് വിളിക്കുന്നത്.
+          </p>
+
+          <div class="callout callout-info">
+            <span class="callout-icon">💡</span>
+            <div>
+              <strong>അന്താരാഷ്ട്ര ഇലക്ട്രിക്കൽ മാനദണ്ഡം (IEC 60364):</strong><br>
+              • <strong>AC വോൾട്ടേജ്:</strong> 50V AC-യിൽ താഴെ (Volts RMS)<br>
+              • <strong>DC വോൾട്ടേജ്:</strong> 120V DC-യിൽ താഴെ (Ripple-free DC)<br>
+              സിസിടിവി ക്യാമറകൾ (12V DC / 48V PoE), ആക്സസ് കൺട്രോൾ (12V DC), ടെലിഫോൺ / ഇന്റർകോം (24V - 48V DC), ഡാറ്റ നെറ്റ്‌വർക്കുകൾ (1.5V - 3.3V) എന്നിവയെല്ലാം ELV കാറ്റഗറിയിലാണ് വരുന്നത്.
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">🛡️</div>
+              <h4>ഉയർന്ന സുരക്ഷ (Safety)</h4>
+              <p>വൈദ്യുതാഘാതം ഉണ്ടാകാനുള്ള സാധ്യത തീരെയില്ല. അതുകൊണ്ട് തന്നെ സാങ്കേതിക വിദഗ്ദ്ധർക്ക് സുരക്ഷിതമായി മെയിന്റനൻസ് ചെയ്യാം.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🔋</div>
+              <h4>ബാറ്ററി ബാക്കപ്പ് (UPS Friendly)</h4>
+              <p>കുറഞ്ഞ പവർ ഉപയോഗിക്കുന്നതിനാൽ ചെറിയ 12V 7Ah ബാറ്ററികൾ ഉപയോഗിച്ച് മണിക്കൂറുകളോളം പ്രവർത്തനം ഉറപ്പാക്കാം.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🔗</div>
+              <h4>ഇന്റഗ്രേഷൻ (System Integration)</h4>
+              <p>സിസിടിവി, ഫയർ അലാറം, ഡോർ ആക്സസ്, ബി.എം.എസ് (BMS) എന്നിവയെല്ലാം ഒരൊറ്റ കൺട്രോൾ റൂമിൽ സംയോജിപ്പിക്കാം.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 1.2 Network Fundamentals -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🌐</span>
+              <div>
+                <h3>നെറ്റ്‌വർക്കിംഗ് അടിസ്ഥാന തത്വങ്ങൾ (Networking Fundamentals)</h3>
+                <small>IP Address, Subnet Mask, Gateway, DNS, DHCP, MAC Address</small>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            ഒന്നിലധികം കമ്പ്യൂട്ടറുകൾ, ക്യാമറകൾ, പ്രിന്ററുകൾ, സെർവറുകൾ എന്നിവ പരസ്പരം വിവരങ്ങൾ കൈമാറാൻ പരസ്പരം ബന്ധിപ്പിക്കുന്ന ശൃംഖലയെയാണ് <strong>കമ്പ്യൂട്ടർ നെറ്റ്‌വർക്ക്</strong> എന്ന് പറയുന്നത്.
+          </p>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>പദം (Term)</th>
+                  <th>പൂർണ്ണരൂപം</th>
+                  <th>മലയാളം വിശദീകരണം</th>
+                  <th>ഉദാഹരണം</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>IP Address</strong></td>
+                  <td>Internet Protocol Address</td>
+                  <td>നെറ്റ്‌വർക്കിലെ ഓരോ ഉപകരണത്തെയും (PC, CCTV, NVR) തിരിച്ചറിയാനുള്ള യുണീക്ക് ലോജിക്കൽ വിലാസം.</td>
+                  <td><code>192.168.1.100</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Subnet Mask</strong></td>
+                  <td>Subnetwork Mask</td>
+                  <td>ഒരു IP വിലാസത്തിലെ നെറ്റ്‌വർക്ക് ഭാഗവും ഹോസ്റ്റ് (ഉപകരണ) ഭാഗവും വേർതിരിക്കുന്ന മാസ്ക്.</td>
+                  <td><code>255.255.255.0 (/24)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Default Gateway</strong></td>
+                  <td>Local Router IP</td>
+                  <td>ലോക്കൽ നെറ്റ്‌വർക്കിൽ നിന്ന് പുറത്തേക്കോ ഇന്റർനെറ്റിലേക്കോ ട്രാഫിക് പോകാനുള്ള റൂട്ടറിന്റെ വിലാസം.</td>
+                  <td><code>192.168.1.1</code></td>
+                </tr>
+                <tr>
+                  <td><strong>DNS Server</strong></td>
+                  <td>Domain Name System</td>
+                  <td>പേരുകളെ (ഉദാ: google.com) ഐപി വിലാസങ്ങളാക്കി മാറ്റുന്ന ഫോൺബുക്ക് സിസ്റ്റം.</td>
+                  <td><code>8.8.8.8 (Google)</code></td>
+                </tr>
+                <tr>
+                  <td><strong>DHCP Server</strong></td>
+                  <td>Dynamic Host Configuration</td>
+                  <td>നെറ്റ്‌വർക്കിലേക്ക് കണക്റ്റാകുന്ന ഉപകരണങ്ങൾക്ക് ഓട്ടോമാറ്റിക്കായി IP നൽകുന്ന സംവിധാനം.</td>
+                  <td>Router-ൽ ഇൻബിൽറ്റ്</td>
+                </tr>
+                <tr>
+                  <td><strong>MAC Address</strong></td>
+                  <td>Media Access Control</td>
+                  <td>നെറ്റ്‌വർക്ക് കാർഡിന്റെ (NIC) ഫാക്ടറിയിൽ നൽകുന്ന ശാശ്വതമായ 48-ബിറ്റ് ഫിസിക്കൽ വിലാസം.</td>
+                  <td><code>00:1A:2B:3C:4D:5E</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 style="margin: 20px 0 10px 0;">പ്രൈവറ്റ് ഐപി വിലാസ ക്ലാസുകൾ (Private IPv4 Classes)</h4>
+          <p>
+            ലോക്കൽ നെറ്റ്‌വർക്കുകളിലും (LAN) സിസിടിവി ഇൻസ്റ്റാളേഷനുകളിലും സൗജന്യമായി ഉപയോഗിക്കാൻ അനുവദിച്ചിട്ടുള്ള ഐപി ശ്രേണികൾ:
+          </p>
+          <ul style="padding-left: 20px; line-height: 2;">
+            <li><strong>Class A Private:</strong> <code>10.0.0.0</code> മുതൽ <code>10.255.255.255</code> വരെ (വലിയ എന്റർപ്രൈസ് നെറ്റ്‌വർക്കുകൾക്ക്)</li>
+            <li><strong>Class B Private:</strong> <code>172.16.0.0</code> മുതൽ <code>172.31.255.255</code> വരെ (ഇടത്തരം കമ്പനികൾക്ക്)</li>
+            <li><strong>Class C Private:</strong> <code>192.168.0.0</code> മുതൽ <code>192.168.255.255</code> വരെ (വീടുകളിലും ഓഫീസുകളിലും സിസിടിവി പ്രോജക്ടുകളിലും ഏറ്റവും കൂടുതൽ ഉപയോഗിക്കുന്നത്)</li>
+          </ul>
+        </article>
+
+        <!-- 1.3 Active & Passive Hardware -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🖧</span>
+              <div>
+                <h3>നെറ്റ്‌വർക്ക് ഹാർഡ്‌വെയർ ഘടകങ്ങൾ (Active vs Passive Components)</h3>
+                <small>സ്വിച്ചുകൾ, PoE മാനദണ്ഡങ്ങൾ, പാച്ച് പാനൽ, സർവർ റാക്കുകൾ</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">🔀</div>
+              <h4>നെറ്റ്‌വർക്ക് സ്വിച്ച് (Network Switch)</h4>
+              <p>
+                <strong>Unmanaged Switch:</strong> കോൺഫിഗറേഷൻ ആവശ്യമില്ലാത്ത പ്ലഗ് & പ്ലേ സ്വിച്ച്.<br>
+                <strong>Managed Switch:</strong> VLAN, QoS, Port Mirroring, IP മാനേജ്മെന്റ് എന്നിവ നൽകുന്ന ഹൈ-എൻഡ് സ്വിച്ച്.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">⚡</div>
+              <h4>PoE സ്വിച്ച് (Power over Ethernet)</h4>
+              <p>
+                ഒരൊറ്റ ലാൻ കേബിളിലൂടെ (Cat6) ക്യാമറയ്ക്ക് ഡാറ്റയും ഒപ്പം 48V DC കറന്റും നൽകുന്നു. പ്രത്യേക പവർ കേബിൾ വലിക്കേണ്ടതില്ല!
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🗄️</div>
+              <h4>പാച്ച് പാനൽ & സർവർ റാക്ക് (Rack)</h4>
+              <p>
+                ഭിത്തികളിൽ നിന്നും ഫ്ലോറുകളിൽ നിന്നും വരുന്ന എല്ലാ Cat6 കേബിളുകളും ക്രമമായി അവസാനിപ്പിക്കാൻ <strong>Patch Panel</strong>-ഉം ഇവ സംരക്ഷിക്കാൻ <strong>4U, 6U, 9U, 12U, 42U Server Racks</strong>-ഉം ഉപയോഗിക്കുന്നു.
+              </p>
+            </div>
+          </div>
+
+          <div class="callout callout-tip">
+            <span class="callout-icon">📌</span>
+            <div>
+              <strong>PoE വോൾട്ടേജ് മാനദണ്ഡങ്ങൾ (PoE Standards):</strong><br>
+              • <strong>IEEE 802.3af (PoE):</strong> പോർട്ടിന് പരമാവധി 15.4 വാട്ട് (സാധാരണ ഇൻഡോർ/ഔട്ട്ഡോർ ഫിക്സഡ് ക്യാമറകൾക്ക്).<br>
+              • <strong>IEEE 802.3at (PoE+):</strong> പോർട്ടിന് പരമാവധി 30 വാട്ട് (PTZ ക്യാമറകൾ, ഹീറ്ററുള്ള ക്യാമറകൾക്ക്).<br>
+              • <strong>IEEE 802.3bt (Hi-PoE / PoE++):</strong> പോർട്ടിന് 60W മുതൽ 90W വരെ (സ്പീഡ് ഡോം, ഹൈ-പവർ ഇൻഫ്രാറെഡ് PTZ-കൾക്ക്).
+            </div>
+          </div>
+        </article>
+
+        <!-- 1.4 Network Cables Cat6 & Fiber -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🧵</span>
+              <div>
+                <h3>നെറ്റ്‌വർക്ക് കേബിളുകൾ: Cat6 vs Fiber Optic</h3>
+                <small>UTP, STP, Single-Mode & Multi-Mode ഫൈബർ</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>കേബിൾ തരം</th>
+                  <th>ബാൻഡ്‌വിഡ്ത്ത്</th>
+                  <th>പരമാവധി വേഗത</th>
+                  <th>പരമാവധി ദൂരം</th>
+                  <th>ഉപയോഗം</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Cat5e</strong></td>
+                  <td>100 MHz</td>
+                  <td>1 Gbps (1000 Mbps)</td>
+                  <td>100 മീറ്റർ</td>
+                  <td>പഴയ ഇൻസ്റ്റാളേഷനുകൾ, ബേസിക് ഇന്റർനെറ്റ്</td>
+                </tr>
+                <tr>
+                  <td><strong>Cat6 (ഏറ്റവും ജനപ്രിയമായത്)</strong></td>
+                  <td>250 MHz</td>
+                  <td>1 Gbps (10 Gbps up to 55m)</td>
+                  <td>100 മീറ്റർ</td>
+                  <td>സിസിടിവി ക്യാമറകൾ, ഓഫീസ് ലാൻ, ആക്സസ് കൺട്രോൾ</td>
+                </tr>
+                <tr>
+                  <td><strong>Cat6A</strong></td>
+                  <td>500 MHz</td>
+                  <td>10 Gbps പൂർണ്ണ ദൂരത്തിൽ</td>
+                  <td>100 മീറ്റർ</td>
+                  <td>ഡാറ്റാ സെന്ററുകൾ, ഹൈ-സ്പീഡ് ബാക്ക്‌ബോൺ</td>
+                </tr>
+                <tr>
+                  <td><strong>Multi-Mode Fiber (OM3/OM4)</strong></td>
+                  <td>850nm / 1300nm</td>
+                  <td>10 Gbps - 40 Gbps</td>
+                  <td>300 - 550 മീറ്റർ</td>
+                  <td>കെട്ടിടത്തിന്റെ വിവിധ ഫ്ലോറുകൾ തമ്മിൽ ബന്ധിപ്പിക്കാൻ (Aqua/Orange)</td>
+                </tr>
+                <tr>
+                  <td><strong>Single-Mode Fiber (OS2)</strong></td>
+                  <td>1310nm / 1550nm</td>
+                  <td>100 Gbps+</td>
+                  <td>10 കിലോമീറ്റർ മുതൽ 40 കി.മീ വരെ</td>
+                  <td>വലിയ ക്യാമ്പസുകൾ, രണ്ട് കെട്ടിടങ്ങൾ തമ്മിൽ, ISP ലൈനുകൾ (Yellow)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 2: CCTV CAMERA INSTALLATION GUIDE
+           ================================================================== -->
+      <section class="tab-section" id="section-camera-install">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">മോഡ്യൂൾ 2</span>
+            <span class="badge badge-amber">പ്രാക്ടിക്കൽ ഫീൽഡ് വർക്ക്</span>
+          </div>
+          <h2>സി.സി.ടി.വി ക്യാമറ ഇൻസ്റ്റാളേഷൻ ഗൈഡ്</h2>
+          <p class="lead">
+            ഒരു സൈറ്റിൽ ക്യാമറ സ്ഥാപിക്കുന്നതിനുള്ള സൈറ്റ് സർവേ, ലെൻസ് സെലക്ഷൻ (2.8mm, 3.6mm, 6mm), മൗണ്ടിംഗ് തരം, പൈപ്പിംഗും ഡ്രില്ലിംഗും, വാട്ടർപ്രൂഫ് ഗ്രന്ഥികൾ, ഇൻസ്റ്റാളേഷൻ സ്റ്റെപ്പുകൾ വിശദമായി.
+          </p>
+        </div>
+
+        <!-- 2.1 Site Survey & Camera Types -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">📐</span>
+              <div>
+                <h3>സൈറ്റ് സർവേ & ക്യാമറ മോഡലുകൾ (Types of Cameras)</h3>
+                <small>Dome, Bullet, Turret, PTZ ക്യാമറകൾ എവിടെ, എങ്ങനെ സ്ഥാപിക്കണം?</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">🔘</div>
+              <h4>ഡോം ക്യാമറ (Dome Camera)</h4>
+              <p>
+                <strong>ഉപയോഗം:</strong> പ്രധാനമായും അകത്തളങ്ങളിൽ (Indoor), ഓഫീസുകളിൽ, റിസപ്ഷനിൽ, ലിഫ്റ്റുകളിൽ.<br>
+                <strong>പ്രത്യേകത:</strong> സീലിംഗിൽ ഭംഗിയായി ഒതുങ്ങിയിരിക്കും. ക്യാമറ ഏത് ദിശയിലേക്കാണ് നോക്കുന്നത് എന്ന് പുറത്ത് നിന്ന് പെട്ടെന്ന് മനസ്സിലാകില്ല.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">📹</div>
+              <h4>ബുള്ളറ്റ് ക്യാമറ (Bullet Camera)</h4>
+              <p>
+                <strong>ഉപയോഗം:</strong> ഔട്ട്ഡോർ (Outdoor), ഗേറ്റ്, മതിലുകൾ, റോഡ് വ്യൂ, പാർക്കിംഗ് ഏരിയ.<br>
+                <strong>പ്രത്യേകത:</strong> സിലിണ്ടർ ആകൃതി. കൂടുതൽ ദൂരത്തേക്ക് (Long Range IR Night Vision) കാണാൻ സാധിക്കും. വെയിലും മഴയും തടയാൻ സൺ ഷീൽഡ് ഉണ്ടായിരിക്കും.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🔄</div>
+              <h4>PTZ ക്യാമറ (Pan-Tilt-Zoom)</h4>
+              <p>
+                <strong>ഉപയോഗം:</strong> വലിയ ഗ്രൗണ്ടുകൾ, ജംഗ്ഷനുകൾ, വലിയ വെയർഹൗസുകൾ.<br>
+                <strong>പ്രത്യേകത:</strong> 360 ഡിഗ്രി തിരിയാനും, മുകളിലേക്കും താഴേക്കും ചെരിയാനും, 20x മുതൽ 42x വരെ ഒപ്റ്റിക്കൽ സൂം ചെയ്യാനും സാധിക്കും.
+              </p>
+            </div>
+          </div>
+
+          <h4 style="margin: 24px 0 12px 0;">ലെൻസ് ഫോക്കൽ ലെങ്ത് സെലക്ഷൻ (Camera Lens Guide)</h4>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>ലെൻസ് സൈസ്</th>
+                  <th>വ്യൂവിംഗ് ആംഗിൾ (Field of View)</th>
+                  <th>ഫോക്കസ് ദൂരം</th>
+                  <th>ഏറ്റവും അനുയോജ്യമായ സ്ഥലം</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>2.8 mm (Wide Angle)</strong></td>
+                  <td>100° - 108° (വളരെ വീതിയേറിയ കാഴ്ച)</td>
+                  <td>ഹ്രസ്വദൂരം (0 - 10 മീറ്റർ)</td>
+                  <td>ചെറിയ മുറികൾ, ലിഫ്റ്റ്, റിസപ്ഷൻ കൗണ്ടർ, ചെറിയ കടകൾ</td>
+                </tr>
+                <tr>
+                  <td><strong>3.6 mm / 4 mm (Standard)</strong></td>
+                  <td>80° - 85° (സാധാരണ കാഴ്ച)</td>
+                  <td>ഇടത്തരം ദൂരം (10 - 20 മീറ്റർ)</td>
+                  <td>വരാന്തകൾ (Corridors), വീടിന്റെ മുൻഭാഗം, ഓഫീസ് കാബിനുകൾ</td>
+                </tr>
+                <tr>
+                  <td><strong>6 mm / 8 mm (Narrow Telephoto)</strong></td>
+                  <td>45° - 55° (കുറഞ്ഞ ആംഗിൾ, കൂടുതൽ ദൂരം)</td>
+                  <td>ദീർഘദൂരം (20 - 35 മീറ്റർ)</td>
+                  <td>പ്രവേശന കവാടം (Main Gate), വാഹന നമ്പർ പ്ലേറ്റ് കാണാൻ</td>
+                </tr>
+                <tr>
+                  <td><strong>Varifocal Lens (2.8 - 12mm)</strong></td>
+                  <td>അഡ്ജസ്റ്റ് ചെയ്യാവുന്ന ആംഗിൾ (30° - 105°)</td>
+                  <td>ആവശ്യാനുസരണം മാറ്റാം</td>
+                  <td>ക്യാമറ വെച്ച ശേഷം മൊബൈലിലൂടെ സൂം ക്രമീകരിക്കേണ്ട സ്ഥലങ്ങളിൽ</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 2.2 Step-by-Step Installation -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🛠️</span>
+              <div>
+                <h3>ക്യാമറ ഇൻസ്റ്റാളേഷൻ ഘട്ടങ്ങൾ (Step-by-Step Practical Guide)</h3>
+                <small>ഫീൽഡിൽ ടെക്നീഷ്യൻ അനുവർത്തിക്കേണ്ട ശരിയായ രീതി</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-list">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h4>സൈറ്റ് മാർക്കിംഗും ഡ്രില്ലിംഗും (Marking & Drilling)</h4>
+                <p>ക്യാമറ ബോക്സിലുള്ള ഡ്രിൽ ടെംപ്ലേറ്റ് സ്റ്റിക്കർ ഭിത്തിയിലോ സീലിംഗിലോ ഒട്ടിച്ച് ഡ്രില്ലിംഗ് മെഷീൻ ഉപയോഗിച്ച് തുളയിടുക. പ്ലാസ്റ്റിക് റോൾ പ്ലഗുകൾ (Gitti/Rawl plugs) കൃത്യമായി അടിച്ചു കയറ്റുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h4>പിവിസി ജംഗ്ഷൻ ബോക്സ് ഫിക്സിംഗ് (PVC Weatherproof Junction Box)</h4>
+                <p>നേരിട്ട് ഭിത്തിയിൽ ക്യാമറ ഉറപ്പിക്കുന്നതിന് പകരം 4x4 ഇഞ്ച് വാട്ടർപ്രൂഫ് പിവിസി ജംഗ്ഷൻ ബോക്സ് സ്ക്രൂ ചെയ്യുക. കണക്ടറുകളും അധികമുള്ള കേബിളും ഇതിനുള്ളിൽ സുരക്ഷിതമായിരിക്കും.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h4>കേബിൾ പുള്ളിംഗ് & പ്രൊട്ടക്ഷൻ (Conduit Piping)</h4>
+                <p>ഔട്ട്ഡോറിൽ കേബിൾ നേരിട്ട് വെയിലോ മഴയോ കൊള്ളാൻ അനുവദിക്കരുത്. 20mm അല്ലെങ്കിൽ 25mm PVC കോൺഡ്യൂട്ട് പൈപ്പോ ഫ്ലെക്സിബിൾ ഹോസോ ഉപയോഗിച്ച് കേബിൾ സംരക്ഷിക്കുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-body">
+                <h4>കണക്ടർ ടെർമിനേഷൻ (RJ45 / BNC)</h4>
+                <p>ഐപി ക്യാമറയാണെങ്കിൽ T568B കളർ കോഡിൽ RJ45 ക്രിമ്പ് ചെയ്യുക. ക്യാമറയുടെ വാട്ടർപ്രൂഫ് ഗ്ലാൻഡ് (Waterproof RJ45 Cap) വഴി കേബിൾ കടത്തി വേണം ക്രിമ്പ് ചെയ്യാൻ. അനലോഗ് ആണെങ്കിൽ BNC കണക്ടറും DC പിന്നും സോൾഡർ ചെയ്യുകയോ സ്ക്രൂ ചെയ്യുകയോ ചെയ്യുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-body">
+                <h4>ആംഗിൾ ഫോക്കസിംഗും ഫൈനൽ ടെസ്റ്റിംഗും (Angle & Focus Adjustment)</h4>
+                <p>മൊബൈൽ ആപ്പിലോ സിസിടിവി ടെസ്റ്റർ മോണിറ്ററിലോ ലൈവ് ഡിസ്പ്ലേ നോക്കി ക്യാമറയുടെ സ്ക്രൂ അയച്ച് ആംഗിളും ഫോക്കസും കൃത്യമാക്കി ടൈറ്റ് ചെയ്യുക.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-warning">
+            <span class="callout-icon">⚠️</span>
+            <div>
+              <strong>ഫീൽഡ് വാണിംഗ് - വാട്ടർ സീലിംഗ് (Water Ingress Warning):</strong><br>
+              ഔട്ട്ഡോർ ക്യാമറകളിൽ 90% കേടുപാടുകളും സംഭവിക്കുന്നത് കണക്ടറിനുള്ളിലേക്ക് മഴവെള്ളം ഇറങ്ങുമ്പോഴാണ്. ക്യാമറയുടെ കൂടെ ലഭിക്കുന്ന <strong>റബ്ബർ ഒ-റിംഗ് (O-Ring) അടങ്ങിയ വാട്ടർപ്രൂഫ് ക്യാപ്</strong> നിർബന്ധമായും ധരിപ്പിക്കുക. ജംഗ്ഷൻ ബോക്സിന്റെ താഴെ ചെറിയ ഡ്രെയിനേജ് ഹോൾ നൽകുന്നത് ഈർപ്പം കെട്ടിക്കിടക്കുന്നത് തടയും.
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 3: ANALOGUE VS IP CAMERA
+           ================================================================== -->
+      <section class="tab-section" id="section-analogue-ip">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">മോഡ്യൂൾ 3</span>
+            <span class="badge badge-purple">താരതമ്യം & കോൺഫിഗറേഷൻ</span>
+          </div>
+          <h2>അനലോഗ് vs ഐപി ക്യാമറ (Analogue vs IP Camera)</h2>
+          <p class="lead">
+            പരമ്പരാഗത കോക്സിയൽ അനലോഗ് സിസിടിവിയും ആധുനിക നെറ്റ്വർക്ക് ഐപി സിസിടിവിയും തമ്മിലുള്ള സാങ്കേതിക വ്യത്യാസങ്ങൾ, DVR vs NVR, SADP ടൂൾ ഉപയോഗിച്ചുള്ള IP ക്യാമറ ആക്റ്റിവേഷൻ, ക്ലൗഡ് P2P കണക്റ്റിവിറ്റി.
+          </p>
+        </div>
+
+        <!-- 3.1 Comparison Table -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">⚖️</span>
+              <div>
+                <h3>പൂർണ്ണമായ താരതമ്യ പട്ടിക (Comparison Table)</h3>
+                <small>അനലോഗ് (HD-TVI/CVI/AHD) vs നെറ്റ്‌വർക്ക് ഐപി ക്യാമറ</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>സവിശേഷത</th>
+                  <th>അനലോഗ് ക്യാമറ (Analogue CCTV)</th>
+                  <th>ഐപി ക്യാമറ (IP Network CCTV)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ഉപയോഗിക്കുന്ന കേബിൾ</strong></td>
+                  <td>RG59 / RG6 കോക്സിയൽ കേബിൾ + 2 കോർ പവർ കേബിൾ (3+1 കേബിൾ)</td>
+                  <td>Cat6 അല്ലെങ്കിൽ Cat5e UTP / STP ഇഥർനെറ്റ് കേബിൾ</td>
+                </tr>
+                <tr>
+                  <td><strong>കണക്ടർ</strong></td>
+                  <td>BNC കണക്ടർ + DC പവർ ജാക്ക്</td>
+                  <td>RJ45 മോഡുലാർ കണക്ടർ</td>
+                </tr>
+                <tr>
+                  <td><strong>റെക്കോർഡിംഗ് ഉപകരണം</strong></td>
+                  <td><strong>DVR</strong> (Digital Video Recorder)</td>
+                  <td><strong>NVR</strong> (Network Video Recorder)</td>
+                </tr>
+                <tr>
+                  <td><strong>പവർ സപ്ലൈ</strong></td>
+                  <td>പ്രത്യേക 12V SMPS പവർ ബോക്സ് ആവശ്യമാണ്</td>
+                  <td><strong>PoE Switch</strong> വഴി കേബിളിലൂടെ നേരിട്ട് ലഭിക്കുന്നു</td>
+                </tr>
+                <tr>
+                  <td><strong>റെസല്യൂഷൻ & ക്വാളിറ്റി</strong></td>
+                  <td>പരമാവധി 2MP മുതൽ 5MP വരെ (ചെറിയ അനലോഗ് നോയ്സ് ഉണ്ടാകാം)</td>
+                  <td>2MP, 4MP, 8MP (4K) മുതൽ 12MP വരെ ക്രിസ്റ്റൽ ക്ലിയർ ഡിജിറ്റൽ</td>
+                </tr>
+                <tr>
+                  <td><strong>വീഡിയോ സിഗ്നൽ</strong></td>
+                  <td>അനലോഗ് ഇലക്ട്രിക്കൽ സിഗ്നൽ</td>
+                  <td>ഡിജിറ്റൽ ഐപി ഡാറ്റാ പാക്കറ്റുകൾ (Encrypted)</td>
+                </tr>
+                <tr>
+                  <td><strong>ബുദ്ധിപരമായ ഫീച്ചറുകൾ (AI)</strong></td>
+                  <td>ലളിതമായ മോഷൻ ഡിറ്റക്ഷൻ മാത്രം</td>
+                  <td>മുഖം തിരിച്ചറിയൽ (Face Detection), ലൈൻ ക്രോസിംഗ്, മനുഷ്യരെയും വാഹനങ്ങളെയും വേർതിരിക്കൽ</td>
+                </tr>
+                <tr>
+                  <td><strong>വില (Cost)</strong></td>
+                  <td>കുറഞ്ഞ ചിലവ് (Budget friendly)</td>
+                  <td>അൽപ്പം വിലക്കൂടുതൽ, എന്നാൽ ഭാവിയിലേക്ക് അനുയോജ്യം</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 3.2 IP Camera Configuration Step by Step -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">💻</span>
+              <div>
+                <h3>ഐപി ക്യാമറ കോൺഫിഗറേഷൻ സ്റ്റെപ്പുകൾ (IP Camera Activation)</h3>
+                <small>Hikvision SADP ടൂളും Dahua ConfigTool-ഉം ഉപയോഗിക്കുന്ന വിധം</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-list">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h4>ക്യാമറ സ്വിച്ചിലേക്ക് കണക്ട് ചെയ്യുക</h4>
+                <p>പുതിയ IP ക്യാമറ PoE സ്വിച്ചിലേക്ക് കണക്ട് ചെയ്യുക. സ്വിച്ചിൽ നിന്ന് ഒരു ലാൻ കേബിൾ നിങ്ങളുടെ ലാപ്ടോപ്പിലേക്ക് നൽകുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h4>SADP Tool അല്ലെങ്കിൽ ConfigTool തുറക്കുക</h4>
+                <p>Hikvision ക്യാമറകൾക്ക് <strong>SADP Tool</strong>-ഉം Dahua ക്യാമറകൾക്ക് <strong>ConfigTool</strong>-ഉം തുറക്കുക. പുതിയ ക്യാമറ 'Inactive' സ്റ്റാറ്റസിൽ ലിസ്റ്റ് ചെയ്യുന്നത് കാണാം.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h4>പാസ്‌വേഡ് നൽകി ആക്റ്റിവേറ്റ് ചെയ്യുക (Activate Device)</h4>
+                <p>ക്യാമറ സെലക്ട് ചെയ്ത് പുതിയ ശക്തമായ പാസ്‌വേഡ് നൽകുക (ഉദാ: <code>Admin@12345</code>). Hikvision-ൽ ഡിഫോൾട്ട് ഐപി <code>192.168.1.64</code> ഉം Dahua-യിൽ <code>192.168.1.108</code> ഉം ആയിരിക്കും.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-body">
+                <h4>സ്റ്റാറ്റിക് ഐപി (Static IP) ക്രമീകരിക്കുക</h4>
+                <p>സൈറ്റിലെ റൂട്ടറിന്റെ ഐപി സബ്നെറ്റിലേക്ക് മാറ്റുക. ഉദാഹരണത്തിന് റൂട്ടർ <code>192.168.0.1</code> ആണെങ്കിൽ, ക്യാമറയ്ക്ക് <code>192.168.0.51</code>, സബ്നെറ്റ് മാസ്ക് <code>255.255.255.0</code>, ഗേറ്റ്‌വേ <code>192.168.0.1</code> നൽകുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-body">
+                <h4>NVR-ൽ ആഡ് ചെയ്യലും മൊബൈൽ കണക്ഷനും (P2P Cloud)</h4>
+                <p>NVR മെനുവിൽ പോയി 'Camera Management' എടുത്ത് 'Search' അടിക്കുക. കണ്ടെത്തിയ ക്യാമറയ്ക്ക് പാസ്‌വേഡ് നൽകി ആഡ് ചെയ്യുക. തുടർന്ന് മൊബൈലിൽ Hik-Connect അല്ലെങ്കിൽ DMSS ആപ്പ് ഉപയോഗിച്ച് NVR-ന്റെ പിൻഭാഗത്തെ QR കോഡ് സ്കാൻ ചെയ്താൽ ലൈവ് വ്യൂ ലഭിക്കും.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 4: RJ45 COLOR CODE & CRIMPING
+           ================================================================== -->
+      <section class="tab-section" id="section-rj45">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">മോഡ്യൂൾ 4</span>
+            <span class="badge badge-green">ഏറ്റവും പ്രധാനം (Must Learn)</span>
+          </div>
+          <h2>RJ45 കളർ കോഡും ക്രിമ്പിംഗും (RJ45 Color Code & Crimping)</h2>
+          <p class="lead">
+            T-568A, T-568B കളർ കോഡിംഗ് സ്റ്റാൻഡേർഡുകൾ, സ്ട്രെയിറ്റ് vs ക്രോസ്സ്ഓവർ കേബിളുകൾ, 8 വയറുകളുടെ റിയലിസ്റ്റിക് ഇന്ററാക്ടീവ് പിൻഔട്ട് ഡയഗ്രം, ക്രിമ്പിംഗ് ടൂൾ ഉപയോഗിക്കുന്ന ശരിയായ രീതി.
+          </p>
+        </div>
+
+        <!-- Interactive Pinout Explorer -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🔌</span>
+              <div>
+                <h3>ഇന്ററാക്ടീവ് RJ45 പിൻഔട്ട് എക്സ്പ്ലോറർ (Pinout Visualizer)</h3>
+                <small>താഴെ സ്റ്റാൻഡേർഡ് മാറ്റി നോക്കൂ, ഓരോ വയറിലും ക്ലിക്ക് ചെയ്ത് സിഗ്നൽ പഠിക്കൂ</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="pinout-container">
+            <div class="pinout-toggle-bar">
+              <div class="btn-group">
+                <button class="toggle-btn active rj45-standard-btn" data-std="T568B">T-568B (ഇൻഡസ്ട്രി സ്റ്റാൻഡേർഡ്)</button>
+                <button class="toggle-btn rj45-standard-btn" data-std="T568A">T-568A (ബദൽ സ്റ്റാൻഡേർഡ്)</button>
+              </div>
+              <span class="badge badge-cyan">ക്ലിക്ക് ചെയ്ത് വയറിന്റെ പ്രവർത്തനം കാണുക</span>
+            </div>
+
+            <!-- Visual RJ45 Plug Body -->
+            <div class="rj45-connector-wrapper">
+              <div class="rj45-plug-body">
+                <div class="rj45-clip-notch" title="Plastic Locking Clip (Behind/Underneath)"></div>
+                <div class="wires-grid" id="rj45WiresGrid">
+                  <!-- Generated dynamically by app.js -->
+                </div>
+              </div>
+
+              <!-- Pin Detail Box -->
+              <div class="pin-detail-box" id="pinDetailBox">
+                <div class="pin-detail-left">
+                  <h5 id="pinDetailTitle">Pin 1: White-Orange</h5>
+                  <p id="pinDetailDesc">ഡാറ്റ അയക്കാൻ ഉപയോഗിക്കുന്നു (10/100/1000 Mbps Transmit Data +)</p>
+                </div>
+                <div class="pin-detail-right">
+                  <span class="badge badge-green" id="pinDetailSignal">TX+ (Transmit)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Code Memorization Table -->
+          <h4 style="margin: 28px 0 14px 0;">T-568B കളർ ക്രമം ഓർത്തു വെക്കാൻ എളുപ്പവഴി (Memorization Guide)</h4>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>പിൻ നമ്പർ</th>
+                  <th>T-568B വയർ കളർ (മലയാളത്തിൽ)</th>
+                  <th>ഇംഗ്ലീഷ് കളർ കോഡ്</th>
+                  <th>പ്രവർത്തനം (Signal Role)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Pin 1</strong></td>
+                  <td>ഓറഞ്ച്-വെള്ള (Orange-White)</td>
+                  <td>White-Orange</td>
+                  <td>Transmit Data + (TX+)</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 2</strong></td>
+                  <td>ഓറഞ്ച് (Orange)</td>
+                  <td>Orange</td>
+                  <td>Transmit Data - (TX-)</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 3</strong></td>
+                  <td>പച്ച-വെള്ള (Green-White)</td>
+                  <td>White-Green</td>
+                  <td>Receive Data + (RX+)</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 4</strong></td>
+                  <td>നീല (Blue)</td>
+                  <td>Blue</td>
+                  <td>Gigabit Data & PoE DC (+) പവർ</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 5</strong></td>
+                  <td>നീല-വെള്ള (Blue-White)</td>
+                  <td>White-Blue</td>
+                  <td>Gigabit Data & PoE DC (+) പവർ</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 6</strong></td>
+                  <td>പച്ച (Green)</td>
+                  <td>Green</td>
+                  <td>Receive Data - (RX-)</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 7</strong></td>
+                  <td>തവിട്ട്-വെള്ള (Brown-White)</td>
+                  <td>White-Brown</td>
+                  <td>Gigabit Data & PoE DC (-) പവർ ഗ്രൗണ്ട്</td>
+                </tr>
+                <tr>
+                  <td><strong>Pin 8</strong></td>
+                  <td>തവിട്ട് (Brown)</td>
+                  <td>Brown</td>
+                  <td>Gigabit Data & PoE DC (-) പവർ ഗ്രൗണ്ട്</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- Straight-Through vs Crossover -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🔀</span>
+              <div>
+                <h3>സ്ട്രെയിറ്റ്-ത്രൂ vs ക്രോസ്സ്ഓവർ കേബിൾ (Straight vs Crossover)</h3>
+                <small>ഏതൊക്കെ ഉപകരണങ്ങൾ തമ്മിൽ ബന്ധിപ്പിക്കാൻ ഏത് കേബിൾ വേണം?</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">➡️</div>
+              <h4>സ്ട്രെയിറ്റ്-ത്രൂ കേബിൾ (Straight-Through)</h4>
+              <p>
+                <strong>വയറിംഗ്:</strong> രണ്ട് അറ്റത്തും ഒരേ സ്റ്റാൻഡേർഡ് (രണ്ട് വശത്തും T-568B).<br>
+                <strong>ഉപയോഗം:</strong> വ്യത്യസ്ത ഉപകരണങ്ങൾ തമ്മിൽ ബന്ധിപ്പിക്കാൻ:<br>
+                • കമ്പ്യൂട്ടർ ടു സ്വിച്ച് (PC to Switch)<br>
+                • സിസിടിവി ക്യാമറ ടു സ്വിച്ച് (Camera to Switch)<br>
+                • റൂട്ടർ ടു സ്വിച്ച് (Router to Switch)
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🔀</div>
+              <h4>ക്രോസ്സ്ഓവർ കേബിൾ (Crossover Cable)</h4>
+              <p>
+                <strong>വയറിംഗ്:</strong> ഒരു അറ്റത്ത് T-568A, മറ്റേ അറ്റത്ത് T-568B.<br>
+                <strong>ഉപയോഗം:</strong> ഒരേ തരം ഉപകരണങ്ങൾ നേരിട്ട് ബന്ധിപ്പിക്കാൻ:<br>
+                • പിസി ടു പിസി നേരിട്ട് (PC to PC)<br>
+                • സ്വിച്ച് ടു സ്വിച്ച് നേരിട്ട് (പഴയ സ്വിച്ചുകളിൽ)<br>
+                <em>(കുറിപ്പ്: ആധുനിക ഉപകരണങ്ങളിലെ Auto-MDIX കാരണം സ്ട്രെയിറ്റ് കേബിളും പ്രവർത്തിക്കും).</em>
+              </p>
+            </div>
+          </div>
+
+          <!-- Step-by-step Crimping -->
+          <h4 style="margin: 24px 0 14px 0;">ലാൻ കേബിൾ ക്രിമ്പ് ചെയ്യുന്ന വിധം (Step-by-Step Crimping Process)</h4>
+          <div class="step-list">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h4>ഔട്ടർ ജാക്കറ്റ് നീക്കുക (Strip Outer Jacket)</h4>
+                <p>കേബിൾ സ്ട്രിപ്പർ ഉപയോഗിച്ച് Cat6 കേബിളിന്റെ പുറം ജാക്കറ്റ് ഏകദേശം 1.5 ഇഞ്ച് (3-4 cm) നീളത്തിൽ വട്ടത്തിൽ വരഞ്ഞ് അകത്തെ വയറുകൾ മുറിയാതെ നീക്കം ചെയ്യുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h4>നടുവിലെ പ്ലാസ്റ്റിക് സെപ്പറേറ്റർ മുറിക്കുക (Cut Center Spine)</h4>
+                <p>Cat6 കേബിളിന്റെ നടുവിലുള്ള പ്ലാസ്റ്റിക് സ്പ്ലൈൻ (Cross Divider) ഒരു കട്ടർ ഉപയോഗിച്ച് ഏറ്റവും അടിയിൽ വെച്ച് മുറിച്ചു മാറ്റുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h4>വയറുകൾ നിവർത്തി T-568B ക്രമത്തിൽ വെക്കുക</h4>
+                <p>4 പെയറുകളായി പിരിച്ചിരിക്കുന്ന വയറുകൾ അഴിച്ച് വിരലുകൾ ഉപയോഗിച്ച് പൂർണ്ണമായി നിവർത്തുക. ഇടത്തുനിന്ന് വലത്തോട്ട് T-568B ക്രമത്തിൽ (White-Orange, Orange, White-Green, Blue, White-Blue, Green, White-Brown, Brown) ഒപ്പത്തിനൊപ്പം അടുക്കിപ്പിടിക്കുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-body">
+                <h4>നേരെ കട്ട് ചെയ്യുക (Flush Cut)</h4>
+                <p>വയറുകൾ ഒരേ നിരയിൽ പിടിച്ചുകൊണ്ട് ക്രിമ്പിംഗ് ടൂളിന്റെ കട്ടർ ഉപയോഗിച്ച് പുറം ജാക്കറ്റിൽ നിന്ന് ഏകദേശം 1.2 cm നീളം ബാക്കിവെച്ച് 90 ഡിഗ്രി ആംഗിളിൽ നേരെ ഒപ്പത്തിന് മുറിക്കുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-body">
+                <h4>RJ45 പ്ലഗിലേക്ക് തള്ളിക്കയറ്റുക & ക്രിമ്പ് ചെയ്യുക</h4>
+                <p>RJ45 കണക്ടറിന്റെ ഗോൾഡൻ പിന്നുകൾ നിങ്ങളുടെ മുഖത്തിന് നേരെയും പ്ലാസ്റ്റിക് ക്ലിപ്പ് താഴേക്കും വെച്ച് 8 വയറുകളും ഒരേസമയം അകത്തേക്ക് മുഴുവനായി തള്ളിക്കയറ്റുക. പുറം ജാക്കറ്റ് കണക്ടറിന്റെ ക്ലിപ്പിംഗ് പോയിന്റിന് ഉള്ളിലേക്ക് കയറിയിരിക്കണം. തുടർന്ന് ക്രിമ്പിംഗ് ടൂളിലിട്ട് ശക്തമായി അമർത്തുക.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">6</div>
+              <div class="step-body">
+                <h4>കേബിൾ ടെസ്റ്റർ പരിശോധന (LAN Cable Tester Test)</h4>
+                <p>കേബിളിന്റെ രണ്ടറ്റവും ലാൻ ടെസ്റ്ററിലിട്ട് സ്വിച്ച് ഓൺ ചെയ്യുക. രണ്ട് യൂണിറ്റിലും 1 മുതൽ 8 വരെയുള്ള ലൈറ്റുകൾ തുടർച്ചയായി ക്രമത്തിൽ (1-2-3-4-5-6-7-8) തെളിയുന്നുണ്ടെന്ന് ഉറപ്പുവരുത്തുക.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 5: KEYSTONE JACK & PUNCH DOWN
+           ================================================================== -->
+      <section class="tab-section" id="section-keystone">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">മോഡ്യൂൾ 5</span>
+            <span class="badge badge-blue">സ്ട്രക്ച്ചേർഡ് കേബ്ലിംഗ്</span>
+          </div>
+          <h2>കീസ്റ്റോൺ ജാക്ക് & I/O പഞ്ച് ഡൗൺ (Keystone Jack & Punch Down)</h2>
+          <p class="lead">
+            എന്താണ് കീസ്റ്റോൺ ജാക്ക് (RJ45 Information Outlet - I/O)? ഫേസ്പ്ലേറ്റിലും പാച്ച് പാനലിലും സൈഡ് A, സൈഡ് B കളർ കോഡിംഗ് അനുസരിച്ച് 110 Punch Down Impact Tool ഉപയോഗിച്ച് പഞ്ച് ചെയ്യുന്ന ശരിയായ രീതി.
+          </p>
+        </div>
+
+        <!-- 5.1 Keystone Visualizer -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🔲</span>
+              <div>
+                <h3>കീസ്റ്റോൺ വയറിംഗ് ലേഔട്ട് (Keystone Jack Color Layout)</h3>
+                <small>സാധാരണ CAT6 മോഡുലാർ ജാക്കിലെ സൈഡ് A vs സൈഡ് B ക്രമീകരണം</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-tip" id="keystoneTipBanner">
+            <span class="callout-icon">💡</span>
+            <div>
+              <strong>ഇൻഡസ്ട്രി ഗോൾഡൻ റൂൾ:</strong> ലോകമെമ്പാടുമുള്ള 95% പ്രോജക്ടുകളിലും RJ45 കണക്ടറിലും കീസ്റ്റോൺ ജാക്കിലും <strong>B-സ്റ്റാൻഡേർഡ് (T-568B)</strong> ആണ് ഉപയോഗിക്കുന്നത്. കീസ്റ്റോൺ ജാക്കിലെ സ്റ്റിക്കറിൽ B അക്ഷരത്തിന് നേരെയുള്ള കളർ കോഡ് നോക്കി പഞ്ച് ചെയ്യുക.
+            </div>
+          </div>
+
+          <div class="keystone-visual-wrapper">
+            <div class="keystone-body-block">
+              <!-- Side 1 Block -->
+              <div class="keystone-side-column">
+                <div class="keystone-side-title">
+                  <h4 style="color: var(--accent-cyan);">സൈഡ് 1 (Side 1 Pins)</h4>
+                  <span class="badge badge-cyan">Slot 1 to 4</span>
+                </div>
+                <div class="keystone-slots-list">
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 1</span>
+                    <div class="slot-color-preview wire-white-blue"></div>
+                    <span class="slot-color-text">White-Blue (നീല-വെള്ള)</span>
+                  </div>
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 2</span>
+                    <div class="slot-color-preview wire-blue"></div>
+                    <span class="slot-color-text">Blue (നീല)</span>
+                  </div>
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 3</span>
+                    <div class="slot-color-preview wire-white-orange"></div>
+                    <span class="slot-color-text">White-Orange (B കോഡിൽ) / White-Green (A കോഡിൽ)</span>
+                  </div>
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 4</span>
+                    <div class="slot-color-preview wire-orange"></div>
+                    <span class="slot-color-text">Orange (B കോഡിൽ) / Green (A കോഡിൽ)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Side 2 Block -->
+              <div class="keystone-side-column">
+                <div class="keystone-side-title">
+                  <h4 style="color: #34d399;">സൈഡ് 2 (Side 2 Pins)</h4>
+                  <span class="badge badge-green">Slot 5 to 8</span>
+                </div>
+                <div class="keystone-slots-list">
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 5</span>
+                    <div class="slot-color-preview wire-white-green"></div>
+                    <span class="slot-color-text">White-Green (B കോഡിൽ) / White-Orange (A കോഡിൽ)</span>
+                  </div>
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 6</span>
+                    <div class="slot-color-preview wire-green"></div>
+                    <span class="slot-color-text">Green (B കോഡിൽ) / Orange (A കോഡിൽ)</span>
+                  </div>
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 7</span>
+                    <div class="slot-color-preview wire-white-brown"></div>
+                    <span class="slot-color-text">White-Brown (തവിട്ട്-വെള്ള)</span>
+                  </div>
+                  <div class="keystone-slot-row">
+                    <span class="slot-pin-label">Slot 8</span>
+                    <div class="slot-color-preview wire-brown"></div>
+                    <span class="slot-color-text">Brown (തവിട്ട്)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5.2 Punch Down Procedure -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🔨</span>
+              <div>
+                <h3>പഞ്ച് ഡൗൺ ചെയ്യുന്ന രീതി (Step-by-Step Punch Down Procedure)</h3>
+                <small>110 ഇംപാക്റ്റ് ടൂൾ / ക്രോൺ ടൂൾ ഉപയോഗിക്കുന്നതിൽ വരുത്തുന്ന വലിയ തെറ്റുകൾ ഒഴിവാക്കുക</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout-danger">
+            <span class="callout-icon">🚨</span>
+            <div>
+              <strong>ഏറ്റവും പ്രധാനപ്പെട്ട സുരക്ഷാ റൂൾ (Crucial Rule):</strong><br>
+              Punch Down Tool-ൽ ഒരു വശത്ത് സാധാരണ ബ്ലേഡും മറുവശത്ത് അധികമുള്ള വയർ മുറിച്ചു മാറ്റുന്ന <strong>കട്ടിംഗ് ബ്ലേഡും (Cut Blade)</strong> ഉണ്ട്. പഞ്ച് ചെയ്യുമ്പോൾ ഈ <strong>കട്ടിംഗ് ബ്ലേഡ് എപ്പോഴും കീസ്റ്റോൺ ജാക്കിന് പുറത്തേക്ക് (Outside)</strong> ആയിരിക്കണം വെക്കേണ്ടത്! കട്ടിംഗ് ബ്ലേഡ് അബദ്ധത്തിൽ ഉള്ളിലേക്ക് തിരിച്ചുവെച്ചാൽ കീസ്റ്റോണിന് അകത്തുള്ള കണക്ഷൻ വയർ തന്നെ മുറിഞ്ഞുപോയി കണക്ഷൻ പൂർണ്ണമായും നഷ്ടപ്പെടും!
+            </div>
+          </div>
+
+          <div class="step-list">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h4>ജാക്കറ്റ് സ്ട്രിപ്പിംഗ് (1 ഇഞ്ച് മാത്രം)</h4>
+                <p>കേബിളിന്റെ പുറം ജാക്കറ്റ് 1 ഇഞ്ച് (2.5 cm) മാത്രം സ്ട്രിപ്പ് ചെയ്യുക. അനാവശ്യമായി കൂടുതൽ ജാക്കറ്റ് കളയരുത്.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h4>പെയറുകൾ അഴിക്കാതെ സ്ലോട്ടുകളിൽ ഇരുത്തുക (Twist Retention)</h4>
+                <p>Cat6 വയറുകളുടെ പിരി (Twist) പൂർണ്ണമായി അഴിക്കാതെ കീസ്റ്റോൺ സ്ലോട്ടിന്റെ തൊട്ടടുത്ത് വരെ പിരി നിലനിർത്തിക്കൊണ്ട് B കോഡ് അനുസരിച്ച് വയറുകൾ അതത് സ്ലോട്ടുകളിൽ അമർത്തി വെയ്ക്കുക (ക്രോസ്‌ടോക്ക് തടയാൻ ഇത് അത്യാവശ്യമാണ്).</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h4>ഇംപാക്റ്റ് ടൂൾ വെച്ച് പഞ്ച് ചെയ്യുക</h4>
+                <p>110 Punch Tool കൃത്യമായി സ്ലോട്ടിന് മുകളിൽ 90 ഡിഗ്രിയിൽ വെച്ച് 'ക്ലിക്ക്' എന്ന ശബ്ദം കേൾക്കുന്നത് വരെ ശക്തമായി അമർത്തുക. വയർ സ്ലോട്ടിലേക്ക് ആഴ്ന്നിറങ്ങുകയും അധികമുള്ള കഷ്ണം കട്ടായി പോകുകയും ചെയ്യും.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-body">
+                <h4>പ്ലാസ്റ്റിക് ഡസ്റ്റ് ക്യാപ് ഇടുക (Dust Cap Cover)</h4>
+                <p>എല്ലാ വയറുകളും പഞ്ച് ചെയ്ത ശേഷം കീസ്റ്റോണിന്റെ കൂടെയുള്ള സുരക്ഷാ പ്ലാസ്റ്റിക് ക്യാപ് മുകളിൽ അമർത്തി ക്ലിപ്പ് ചെയ്യുക. ഇത് പൊടിപടലങ്ങൾ കയറുന്നതും വയർ ഇളകിപ്പോകുന്നതും തടയുന്നു.</p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-body">
+                <h4>ഫേസ്പ്ലേറ്റിൽ അല്ലെങ്കിൽ പാച്ച് പാനലിൽ ഫിറ്റ് ചെയ്യുക</h4>
+                <p>കീസ്റ്റോൺ ജാക്ക് ഭിത്തിയിലെ ഫേസ്പ്ലേറ്റ് ഗ്യാങ് ബോക്സിലേക്കോ (I/O Box) 24-പോർട്ട് പാച്ച് പാനലിലേക്കോ ക്ലിപ്പ് ചെയ്യുക. തുടർന്ന് കേബിൾ ഐഡി നമ്പർ (ഉദാ: D-01, D-02) വ്യക്തമായി ലേബൽ ചെയ്യുക.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 6: OTHER ELV SYSTEMS
+           ================================================================== -->
+      <section class="tab-section" id="section-elv-systems">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">മോഡ്യൂൾ 6</span>
+            <span class="badge badge-green">വിപുലമായ സിസ്റ്റങ്ങൾ</span>
+          </div>
+          <h2>മറ്റ് പ്രധാന ഇ.എൽ.വി സിസ്റ്റങ്ങൾ (ELV Related Systems)</h2>
+          <p class="lead">
+            ആക്സസ് കൺട്രോൾ സിസ്റ്റം (Access Control), ഫയർ അലാറം (Fire Alarm), പബ്ലിക് അഡ്രസ്സ് (PA System), വീഡിയോ ഡോർ ഫോൺ / ഇന്റർകോം, സ്ട്രക്ച്ചേർഡ് റാക്ക് ഡ്രസ്സിംഗ് മാനദണ്ഡങ്ങൾ.
+          </p>
+        </div>
+
+        <!-- 6.1 Access Control -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🚪</span>
+              <div>
+                <h3>1. ഡോർ ആക്സസ് കൺട്രോൾ സിസ്റ്റം (Access Control System - ACS)</h3>
+                <small>അംഗീകൃത ആളുകൾക്ക് മാത്രം വാതിലുകൾ തുറക്കാനുള്ള ഇലക്ട്രോണിക് സുരക്ഷാ സംവിധാനം</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">💳</div>
+              <h4>റീഡറുകൾ (Card / Biometric Readers)</h4>
+              <p>RFID കാർഡ്, വിരലടയാളം (Fingerprint), ഫേസ് റെക്കഗ്നിഷൻ സ്കാനർ. Wiegand അല്ലെങ്കിൽ OSDP പ്രോട്ടോക്കോൾ വഴി കൺട്രോളറുമായി സംസാരിക്കുന്നു.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🧲</div>
+              <h4>ഇലക്ട്രോമാഗ്നറ്റിക് ലോക്ക് (EM Lock)</h4>
+              <p>വാതിലിന്റെ മുകളിൽ ഘടിപ്പിക്കുന്ന ശക്തമായ കാന്തം (600 lbs അല്ലെങ്കിൽ 1200 lbs ശേഷി). 12V DC കറന്റ് നിലനിൽക്കുമ്പോൾ വാതിൽ ശക്തമായി പൂട്ടിക്കിടക്കും.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🔘</div>
+              <h4>എക്സിറ്റ് ബട്ടൺ & ബ്രേക്ക് ഗ്ലാസ്</h4>
+              <p><strong>Push to Exit:</strong> മുറിക്കകത്ത് നിന്ന് പുറത്തേക്ക് പോകാൻ അമർത്തുന്ന സ്വിച്ച്.<br><strong>Emergency Break Glass:</strong> തീപിടുത്തമോ അപകടമോ ഉണ്ടായാൽ പവർ ഓഫ് ചെയ്ത് വാതിൽ തുറക്കാൻ ചില്ല് ഉടയ്ക്കുന്ന എമർജൻസി സ്വിച്ച്.</p>
+            </div>
+          </div>
+
+          <div class="callout callout-info">
+            <span class="callout-icon">🔌</span>
+            <div>
+              <strong>Fail-Safe vs Fail-Secure ലോക്കിംഗ് വ്യത്യാസം:</strong><br>
+              • <strong>Fail-Safe (ഉദാ: EM Lock):</strong> പവർ കട്ട് ആയാൽ ഡോർ സ്വയം തുറക്കും (Unlocks on power failure). മനുഷ്യർ കുടുങ്ങിപ്പോകാതിരിക്കാൻ എമർജൻസി എക്സിറ്റ് വാതിലുകളിൽ ഇത് നിർബന്ധമാണ്.<br>
+              • <strong>Fail-Secure (ഉദാ: Drop Bolt / Electric Strike):</strong> പവർ പോയാലും ഡോർ പൂട്ടിക്കിടക്കും (Remains locked on power failure). ബാങ്ക് ലോക്കറുകൾ, സർവർ റൂം എന്നിവയ്ക്കാണ് ഇത് ഉപയോഗിക്കുന്നത്.
+            </div>
+          </div>
+        </article>
+
+        <!-- 6.2 Fire Alarm & PA Systems -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🔥</span>
+              <div>
+                <h3>2. ഫയർ അലാറം & പബ്ലിക് അഡ്രസ്സ് (Fire Alarm & PA Systems)</h3>
+                <small>അടിയന്തര ജീവൻ രക്ഷാ സന്ദേശങ്ങളും മുന്നറിയിപ്പുകളും നൽകുന്ന സിസ്റ്റംസ്</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">🚨</div>
+              <h4>ഫയർ അലാറം സിസ്റ്റം (Fire Alarm)</h4>
+              <p>
+                <strong>ഘടകങ്ങൾ:</strong> ഒപ്റ്റിക്കൽ സ്മോക്ക് ഡിറ്റക്ടർ, ഹീറ്റ് ഡിറ്റക്ടർ, മാന്വൽ കോൾ പോയിന്റ് (MCP), ഫയർ സൈറൺ / ഫ്ലാഷർ.<br>
+                <strong>Addressable Panel:</strong> ഓരോ ഡിറ്റക്ടറിനും പ്രത്യേക നമ്പറും മുറിയുടെ പേരും പാനലിൽ കാണിക്കും.<br>
+                <strong>കേബിൾ:</strong> തീ പിടിക്കാത്ത 2-കോർ FP200 റെഡ് ഫയർ റെസിസ്റ്റന്റ് കേബിൾ.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">📢</div>
+              <h4>പബ്ലിക് അഡ്രസ്സ് സിസ്റ്റം (PA/VA System)</h4>
+              <p>
+                <strong>ഘടകങ്ങൾ:</strong> മൈക്രോഫോൺ, പ്രീ-ആംപ്ലിഫയർ, സോൺ സെലക്ടർ, 100V ലൈൻ ട്രാൻസ്ഫോർമർ ഉള്ള സീലിംഗ് സ്പീക്കറുകൾ.<br>
+                <strong>പ്രത്യേകത:</strong> ഒരു വലിയ മാളിലോ സ്കൂളിലോ ഒരൊറ്റ മുറിയിലേക്ക് മാത്രമായോ അല്ലെങ്കിൽ എല്ലാ സ്പീക്കറുകളിലേക്കും ഒരേസമയമോ അറിയിപ്പുകൾ നൽകാം.
+              </p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">📞</div>
+              <h4>ഇന്റർകോം & വീഡിയോ ഡോർ ഫോൺ (VDP)</h4>
+              <p>
+                <strong>ഉപയോഗം:</strong> വില്ലകളിലും അപ്പാർട്ട്‌മെന്റുകളിലും ഗേറ്റിലുള്ള സന്ദർശകനെ കണ്ട് സംസാരിക്കാനും അകത്തിരുന്ന് ഗേറ്റ് തുറക്കാനും IP അല്ലെങ്കിൽ 2-വയർ VDP സഹായിക്കുന്നു.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 7: BASICS OF COMPUTER HARDWARE
+           ================================================================== -->
+      <section class="tab-section" id="section-computer-hardware">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">മോഡ്യൂൾ 7</span>
+            <span class="badge badge-amber">ഹാർഡ്‌വെയർ & ട്രബിൾഷൂട്ടിംഗ്</span>
+          </div>
+          <h2>കമ്പ്യൂട്ടർ ഹാർഡ്‌വെയർ അടിസ്ഥാനങ്ങൾ (Basics of Computer Hardware)</h2>
+          <p class="lead">
+            മദർബോർഡ് ഘടന, പ്രോസസ്സർ (CPU), റാം (RAM DDR4/DDR5), എസ്.എസ്.ഡി vs ഹാർഡ് ഡിസ്ക്, SMPS പവർ സപ്ലൈ കണക്ടറുകൾ, ഫ്രണ്ട് പാനൽ കണക്ഷനുകൾ, നോ-ഡിസ്പ്ലേ പ്രശ്നപരിഹാരങ്ങൾ.
+          </p>
+        </div>
+
+        <!-- 7.1 Motherboard Architecture -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🖥️</span>
+              <div>
+                <h3>മദർബോർഡും പ്രധാന ഘടകങ്ങളും (Motherboard Architecture)</h3>
+                <small>കമ്പ്യൂട്ടറിന്റെ എല്ലാ ഭാഗങ്ങളെയും ബന്ധിപ്പിക്കുന്ന പ്രധാന സർക്യൂട്ട് ബോർഡ്</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-grid-3">
+            <div class="feature-box">
+              <div class="feature-box-icon">🧠</div>
+              <h4>CPU Socket (പ്രോസസ്സർ സോക്കറ്റ്)</h4>
+              <p>Intel പ്രോസസ്സറുകൾക്ക് LGA സോക്കറ്റും (മദർബോർഡിൽ പിന്നുകൾ) AMD പ്രോസസ്സറുകൾക്ക് AM4/AM5 സോക്കറ്റും ഉപയോഗിക്കുന്നു.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">📊</div>
+              <h4>RAM DIMM Slots</h4>
+              <p>DDR4 അല്ലെങ്കിൽ DDR5 മെമ്മറി സ്റ്റിക്ക് ഉറപ്പിക്കുന്ന സ്ലോട്ടുകൾ. ഡ്യുവൽ ചാനലിനായി സാധാരണ Slot 2, Slot 4 ആണ് ഉപയോഗിക്കുന്നത്.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-box-icon">🚀</div>
+              <h4>PCIe x16 & M.2 NVMe Slots</h4>
+              <p>ഗ്രാഫിക്സ് കാർഡുകൾക്കായി അതിവേഗ PCIe x16 സ്ലോട്ടും, ഏറ്റവും പുതിയ അതിവേഗ ഡ്രൈവുകൾക്കായി M.2 NVMe സ്ലോട്ടുകളും ഉണ്ടാകും.</p>
+            </div>
+          </div>
+
+          <h4 style="margin: 24px 0 12px 0;">മദർബോർഡ് ഫ്രണ്ട് പാനൽ കണക്റ്റിവിറ്റി (Front Panel Header Pinout)</h4>
+          <p>
+            കാബിനറ്റിന്റെ മുൻവശത്തെ പവർ ബട്ടൺ, റീസെറ്റ് ബട്ടൺ, LED ലൈറ്റുകൾ എന്നിവ മദർബോർഡിലെ <strong>JFP1 / Front Panel</strong> പിന്നുകളിലേക്കാണ് ഘടിപ്പിക്കുന്നത്:
+          </p>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>കണക്ടർ ലേബൽ</th>
+                  <th>പൂർണ്ണരൂപം</th>
+                  <th>പ്രവർത്തനം</th>
+                  <th>ശ്രദ്ധിക്കേണ്ട കാര്യം</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>POWER SW</code></td>
+                  <td>Power Switch</td>
+                  <td>പിസി ഓൺ ചെയ്യാനും ഓഫ് ചെയ്യാനും ഉള്ള ബട്ടൺ കണക്ടർ</td>
+                  <td>പോസിറ്റീവ് / നെഗറ്റീവ് വ്യത്യാസമില്ല (സ്വിച്ചിംഗ് മാത്രം)</td>
+                </tr>
+                <tr>
+                  <td><code>RESET SW</code></td>
+                  <td>Reset Switch</td>
+                  <td>സിസ്റ്റം നിർബന്ധിതമായി റീസ്റ്റാർട്ട് ചെയ്യാനുള്ള ബട്ടൺ</td>
+                  <td>പോസിറ്റീവ് / നെഗറ്റീവ് വ്യത്യാസമില്ല</td>
+                </tr>
+                <tr>
+                  <td><code>HDD LED</code></td>
+                  <td>Hard Disk Drive Activity LED</td>
+                  <td>ഹാർഡ് ഡിസ്ക് അല്ലെങ്കിൽ SSD പ്രവർത്തിക്കുമ്പോൾ മിന്നുന്ന ലൈറ്റ്</td>
+                  <td>പോസിറ്റീവ് (+) ഉം നെഗറ്റീവ് (-) ഉം കൃത്യമായി ഇടണം</td>
+                </tr>
+                <tr>
+                  <td><code>POWER LED</code></td>
+                  <td>Power Indicator LED</td>
+                  <td>കമ്പ്യൂട്ടർ ഓൺ ആണെന്ന് സൂചിപ്പിക്കുന്ന പച്ച/നീല ലൈറ്റ്</td>
+                  <td>പോസിറ്റീവ് (+), നെഗറ്റീവ് (-) തെറ്റിയാൽ ലൈറ്റ് കട്ടില്ല</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- 7.2 CPU, RAM & Storage -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">⚡</span>
+              <div>
+                <h3>CPU, RAM & സ്റ്റോറേജ് ഉപകരണങ്ങൾ (SSD vs HDD)</h3>
+                <small>വേഗത, കാര്യക്ഷമത, തിരഞ്ഞെടുക്കേണ്ട മാനദണ്ഡങ്ങൾ</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>സ്റ്റോറേജ് തരം</th>
+                  <th>പ്രവർത്തന തത്വം</th>
+                  <th>ശരാശരി വേഗത (Speed)</th>
+                  <th>ഏറ്റവും മികച്ച ഉപയോഗം</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>HDD (Hard Disk Drive)</strong></td>
+                  <td>കാന്തിക പ്ലേറ്ററുകൾ കറങ്ങുന്ന മെക്കാനിക്കൽ ഡിസ്ക് (5400 / 7200 RPM)</td>
+                  <td>120 - 160 MB/s (വളരെ കുറവ്)</td>
+                  <td>സിസിടിവി റെക്കോർഡിംഗ് സൂക്ഷിക്കാൻ, വലിയ ഡാറ്റ ബാക്കപ്പുകൾക്ക്</td>
+                </tr>
+                <tr>
+                  <td><strong>SATA SSD (2.5 Inch)</strong></td>
+                  <td>ഫ്ലാഷ് മെമ്മറി ചിപ്പുകൾ, SATA 3 ഇന്റർഫേസ്</td>
+                  <td>500 - 550 MB/s (HDD-യേക്കാൾ 4 ഇരട്ടി വേഗത)</td>
+                  <td>പഴയ ലാപ്ടോപ്പുകളും ഡെസ്ക്ടോപ്പുകളും സ്പീഡാക്കാൻ</td>
+                </tr>
+                <tr>
+                  <td><strong>M.2 NVMe SSD (PCIe Gen 3/4)</strong></td>
+                  <td>മദർബോർഡ് PCIe ലെയ്ൻ വഴി നേരിട്ട് കണക്റ്റാകുന്ന അതിവേഗ ചിപ്പ്</td>
+                  <td>3500 - 7500 MB/s (HDD-യേക്കാൾ 50 ഇരട്ടി വേഗത!)</td>
+                  <td>വിൻഡോസ് ഓപ്പറേറ്റിംഗ് സിസ്റ്റം, ഗെയിമിംഗ്, 4K വീഡിയോ എഡിറ്റിംഗ്</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout callout-tip">
+            <span class="callout-icon">📌</span>
+            <div>
+              <strong>റാം ഇൻസ്റ്റാളേഷൻ ഗോൾഡൻ റൂൾ (Dual-Channel Architecture):</strong><br>
+              മദർബോർഡിൽ 4 റാം സ്ലോട്ടുകൾ ഉണ്ടെങ്കിൽ (DIMM 1, 2, 3, 4), രണ്ട് റാം സ്റ്റിക്കുകൾ ഉപയോഗിക്കുമ്പോൾ <strong>സ്ലോട്ട് 2 ലും സ്ലോട്ട് 4 ലും (A2 & B2)</strong> ആണ് ഇടേണ്ടത്. ഇത് മെമ്മറി ഡ്യുവൽ-ചാനൽ മോഡിൽ പ്രവർത്തിപ്പിക്കുകയും ഗെയിമിംഗിലും കമ്പ്യൂട്ടർ പ്രകടനത്തിലും 15-20% വരെ കൂടുതൽ സ്പീഡ് നൽകുകയും ചെയ്യുന്നു.
+            </div>
+          </div>
+        </article>
+
+        <!-- 7.3 SMPS & Troubleshooting -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🔌</span>
+              <div>
+                <h3>SMPS പവർ സപ്ലൈ & ഹാർഡ്‌വെയർ ട്രബിൾഷൂട്ടിംഗ് (Troubleshooting)</h3>
+                <small>നോ-ഡിസ്പ്ലേ, ഓട്ടോമാറ്റിക് ഷട്ട്ഡൗൺ, ബീപ്പ് കോഡുകൾ പരിഹരിക്കൽ</small>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            <strong>SMPS (Switched-Mode Power Supply):</strong> വീടുകളിലെ 230V AC കറന്റിനെ കമ്പ്യൂട്ടറിലെ സെൻസിറ്റീവ് ഇലക്ട്രോണിക് ചിപ്പുകൾക്ക് ആവശ്യമായ +12V, +5V, +3.3V DC കറന്റാക്കി മാറ്റുന്ന ഉപകരണമാണിത്.
+          </p>
+
+          <div class="step-list">
+            <div class="step-item">
+              <div class="step-number">🔧</div>
+              <div class="step-body">
+                <h4>ഡിസ്പ്ലേ വരാതിരിക്കുക (No Display Problem - ഫാൻ കറങ്ങുന്നു, സ്ക്രീനിൽ ഒന്നുമില്ല)</h4>
+                <p>
+                  1. പിസി പവർ ഓഫ് ചെയ്ത് പവർ കേബിൾ ഊരുക.<br>
+                  2. റാം (RAM) സ്ലോട്ടിൽ നിന്ന് റിലീസ് ക്ലിപ്പുകൾ അമർത്തി പുറത്തെടുക്കുക.<br>
+                  3. ഒരു സാധാരണ പെൻസിൽ <strong>റബ്ബർ ഇറേസർ (Eraser)</strong> ഉപയോഗിച്ച് റാമിന്റെ താഴെയുള്ള സ്വർണ്ണ നിറത്തിലുള്ള പിന്നുകൾ (Golden Contacts) മൃദുവായി ഉരച്ച് വൃത്തിയാക്കുക (കാർബണും പൊടിയും മാറാൻ).<br>
+                  4. റാം സ്ലോട്ട് 2-ൽ കൃത്യമായി 'ക്ലിക്ക്' ശബ്ദം കേൾക്കുന്നത് വരെ തിരികെ അമർത്തി ഉറപ്പിക്കുക. 80% നോ-ഡിസ്പ്ലേ പ്രശ്നങ്ങളും ഇതോടെ പരിഹരിക്കപ്പെടും!
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">🔋</div>
+              <div class="step-body">
+                <h4>തീയതിയും സമയവും തെറ്റുക & BIOS റീസെറ്റ് (CR2032 Battery)</h4>
+                <p>
+                  കമ്പ്യൂട്ടർ ഓഫ് ചെയ്ത് ഓൺ ചെയ്യുമ്പോൾ സമയം പഴയ വർഷത്തിലേക്ക് മാറുന്നുണ്ടെങ്കിൽ മദർബോർഡിലെ <strong>CR2032 3V ലിഥിയം കോയിൻ ബാറ്ററി</strong> തീർന്നുപോയതാണ്. പുതിയ ബാറ്ററി മാറ്റിയിടുക. ബയോസ് പൂർണ്ണമായി റീസെറ്റ് ചെയ്യാൻ ഈ ബാറ്ററി 2 മിനിറ്റ് ഊരിയിട്ട ശേഷം തിരികെ വെച്ചാൽ മതിയാകും.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">🌡️</div>
+              <div class="step-body">
+                <h4>ഓട്ടോമാറ്റിക് ഷട്ട്ഡൗൺ & തെർമൽ ത്രോട്ടിലിംഗ് (Thermal Paste)</h4>
+                <p>
+                  കമ്പ്യൂട്ടർ ഓൺ ചെയ്ത് അല്പസമയത്തിനകം സ്വയം ഓഫ് ആകുകയോ ഭയങ്കരമായി ഹാങ് ആകുകയോ ചെയ്യുന്നുവെങ്കിൽ സിപിയു ഹീറ്റ്സിങ്കിലെ തെർമൽ പേസ്റ്റ് (Thermal Paste) ഉണങ്ങിപ്പോയതാകാം. പഴയ പേസ്റ്റ് ഐസോപ്രോപൈൽ ആൽക്കഹോൾ വെച്ച് തുടച്ചു മാറ്റി ഒരു പയറുമണി വലുപ്പത്തിൽ പുതിയ തെർമൽ പേസ്റ്റ് വെച്ച് കൂളർ ഫാൻ മുറുക്കുക.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 8: INTERACTIVE TOOLS & CALCULATORS
+           ================================================================== -->
+      <section class="tab-section" id="section-tools">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">പ്രാക്ടിക്കൽ ടൂളുകൾ</span>
+            <span class="badge badge-green">ലൈവ് കാൽക്കുലേഷൻ</span>
+          </div>
+          <h2>ഇന്ററാക്ടീവ് ടൂളുകൾ & കാൽക്കുലേറ്ററുകൾ</h2>
+          <p class="lead">
+            സിസിടിവി സ്റ്റോറേജ് & നെറ്റ്‌വർക്ക് ബാൻഡ്‌വിഡ്ത്ത് കാൽക്കുലേറ്റർ, കമ്പ്യൂട്ടർ SMPS വാട്ടേജ് കാൽക്കുലേറ്റർ.
+          </p>
+        </div>
+
+        <!-- Tool 1: CCTV Storage Calculator -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">🧮</span>
+              <div>
+                <h3>സിസിടിവി സ്റ്റോറേജ് & ഹാർഡ് ഡിസ്ക് കാൽക്കുലേറ്റർ (CCTV Storage Calculator)</h3>
+                <small>ക്യാമറകളുടെ എണ്ണവും ദിവസങ്ങളും അനുസരിച്ച് ആവശ്യമായ HDD സ്റ്റോറേജ് കണക്കാക്കുക</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator-wrapper">
+            <div class="calc-grid">
+              <div class="form-group">
+                <label for="calcCamCount">
+                  <span>ക്യാമറകളുടെ എണ്ണം (No. of Cameras):</span>
+                  <span id="calcCamCountVal" style="color: var(--accent-cyan); font-weight: 800;">4</span>
+                </label>
+                <input type="range" id="calcCamCount" min="1" max="64" value="4" class="form-control" style="padding: 0; cursor: pointer;">
+              </div>
+
+              <div class="form-group">
+                <label for="calcResolution">ക്യാമറ റെസല്യൂഷൻ (Resolution):</label>
+                <select id="calcResolution" class="form-control">
+                  <option value="2MP" selected>2 Megapixel (1080p Full HD)</option>
+                  <option value="4MP">4 Megapixel (2K Quad HD)</option>
+                  <option value="8MP">8 Megapixel (4K Ultra HD)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcCodec">വീഡിയോ കംപ്രഷൻ കോഡെക് (Codec):</label>
+                <select id="calcCodec" class="form-control">
+                  <option value="h264">H.264 (പഴയ സാധാരണ ഫോർമാറ്റ്)</option>
+                  <option value="h265" selected>H.265 / HEVC (50% സ്റ്റോറേജ് ലാഭം)</option>
+                  <option value="h265plus">H.265+ Smart Codec (70% സ്റ്റോറേജ് ലാഭം)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcFps">ഫ്രെയിം റേറ്റ് (Frame Rate - FPS):</label>
+                <select id="calcFps" class="form-control">
+                  <option value="15">15 FPS (സാധാരണ നിരീക്ഷണത്തിന് ധാരാളം)</option>
+                  <option value="20" selected>20 FPS (Smooth Motion)</option>
+                  <option value="25">25 FPS (റിയൽ-ടൈം ഫുൾ സ്പീഡ്)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="calcDays">എത്ര ദിവസത്തെ റെക്കോർഡിംഗ് വേണം (Days):</label>
+                <input type="number" id="calcDays" min="1" max="365" value="30" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="calcRecMode">റെക്കോർഡിംഗ് മോഡ് (Recording Schedule):</label>
+                <select id="calcRecMode" class="form-control">
+                  <option value="24" selected>24/7 തുടർച്ചയായ റെക്കോർഡിംഗ് (24 മണിക്കൂർ)</option>
+                  <option value="12">മോഷൻ ഡിറ്റക്ഷൻ മാത്രം (ശരാശരി 12 മണിക്കൂർ)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Calculation Output -->
+            <div class="calc-result-box">
+              <div class="result-metric">
+                <h6>ആവശ്യമായ ആകെ സ്റ്റോറേജ്</h6>
+                <div class="value" id="outStorageTB">1.85 TB</div>
+                <div class="subtext" id="outStorageGB">1,894 GB</div>
+              </div>
+
+              <div class="result-metric">
+                <h6>ആകെ നെറ്റ്‌വർക്ക് ബാൻഡ്‌വിഡ്ത്ത്</h6>
+                <div class="value" id="outBandwidth">6.4 Mbps</div>
+                <div class="subtext">സ്വിച്ച് & അപ്‌ലിങ്ക് ട്രാഫിക്</div>
+              </div>
+
+              <div class="result-metric" style="grid-column: span 2;">
+                <h6>ശുപാർശ ചെയ്യുന്ന ഹാർഡ് ഡിസ്ക് (Surveillance HDD Advice)</h6>
+                <div class="value" id="outHDDRecommend" style="font-size: 1.15rem; color: #34d399; margin-top: 6px;">
+                  1x 2TB Surveillance HDD (WD Purple / Seagate SkyHawk)
+                </div>
+                <div class="subtext">സാധാരണ PC ഹാർഡ് ഡിസ്കിന് പകരം 24/7 സർവൈലൻസ് ഡ്രൈവ് ഉപയോഗിക്കുക</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tool 2: PC Hardware Power & SMPS Calculator -->
+        <article class="content-card">
+          <div class="card-header-bar">
+            <div class="card-title-group">
+              <span class="card-icon">⚡</span>
+              <div>
+                <h3>പിസി പവർ സപ്ലൈ (SMPS) വാട്ടേജ് കാൽക്കുലേറ്റർ</h3>
+                <small>നിങ്ങളുടെ കമ്പ്യൂട്ടർ കോൺഫിഗറേഷന് എത്ര വാട്ടിന്റെ SMPS വേണമെന്ന് കൃത്യമായി അറിയാം</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="pc-builder-container">
+            <div class="builder-grid">
+              <div class="builder-selection-column">
+                <div class="form-group">
+                  <label for="pcCpu">പ്രോസസ്സർ (CPU Selection):</label>
+                  <select id="pcCpu" class="form-control">
+                    <option value="65" selected>Intel Core i3 / AMD Ryzen 3 (65W)</option>
+                    <option value="95">Intel Core i5 / AMD Ryzen 5 (95W)</option>
+                    <option value="150">Intel Core i7 / AMD Ryzen 7 (150W)</option>
+                    <option value="250">Intel Core i9 / AMD Ryzen 9 (250W Extreme)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="pcGpu">ഗ്രാഫിക്സ് കാർഡ് (Dedicated GPU):</label>
+                  <select id="pcGpu" class="form-control">
+                    <option value="0" selected>ഇന്റഗ്രേറ്റഡ് ഗ്രാഫിക്സ് (No Separate GPU - 0W)</option>
+                    <option value="75">Nvidia GTX 1650 / AMD RX 6400 (75W)</option>
+                    <option value="120">Nvidia RTX 3050 / RTX 4060 (115 - 120W)</option>
+                    <option value="200">Nvidia RTX 4070 / Super (200W)</option>
+                    <option value="350">Nvidia RTX 4080 / 4090 (350 - 450W High-End)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="pcRam">റാം മെമ്മറി (RAM Quantity):</label>
+                  <select id="pcRam" class="form-control">
+                    <option value="10">8 GB DDR4 (1x Stick - 10W)</option>
+                    <option value="15" selected>16 GB DDR4/DDR5 (2x Sticks - 15W)</option>
+                    <option value="25">32 GB / 64 GB DDR5 (2x or 4x Sticks - 25W)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="pcStorage">സ്റ്റോറേജ് ഡ്രൈവുകൾ (Storage Drives):</label>
+                  <select id="pcStorage" class="form-control">
+                    <option value="10">1x M.2 NVMe SSD മാത്രം (10W)</option>
+                    <option value="20" selected>1x NVMe SSD + 1x 7200 RPM HDD (20W)</option>
+                    <option value="35">2x SSD + 2x HDD (35W)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Power Gauge Summary -->
+              <div class="builder-summary-card">
+                <div>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 6px;">പീക്ക് പവർ ഉപഭോഗം</h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">മദർബോർഡും ഫാനുകളും ഉൾപ്പെടെ</p>
+                </div>
+
+                <div class="wattage-gauge">
+                  <div class="wattage-number" id="pcTotalWatts">150 W</div>
+                  <div class="wattage-label">എസ്റ്റിമേറ്റഡ് പീക്ക് വാട്ടേജ്</div>
+                </div>
+
+                <div>
+                  <div class="psu-recommendation" id="pcPsuRecommend">450W SMPS ആവശ്യമാണ്</div>
+                  <p style="font-size: 0.78rem; text-align: center; color: var(--text-muted); margin-top: 8px;" id="pc80PlusRecommend">
+                    ശുപാർശ ചെയ്യുന്ന ഗ്രേഡ്: 80 Plus Bronze
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 9: FIELD TECHNICIAN CHEAT SHEET (PRINT READY)
+           ================================================================== -->
+      <section class="tab-section" id="section-cheatsheet">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">ഫീൽഡ് ടൂൾകിറ്റ്</span>
+            <span class="badge badge-amber">പ്രിന്റ് ചെയ്യാവുന്ന റഫറൻസ്</span>
+          </div>
+          <h2>ഫീൽഡ് ടെക്നീഷ്യൻ പോക്കറ്റ് ചീറ്റ് ഷീറ്റ് (Print Ready)</h2>
+          <p class="lead">
+            സൈറ്റുകളിൽ വർക്ക് ചെയ്യുമ്പോൾ പെട്ടെന്ന് റഫർ ചെയ്യാൻ എല്ലാ പ്രധാന കളർ കോഡുകൾ, പോർട്ട് നമ്പറുകൾ, കേബിൾ പരിധികൾ, ട്രബിൾഷൂട്ടിംഗ് ഗൈഡ് എന്നിവ ഒറ്റ പേജിൽ.
+          </p>
+          <button class="btn-primary trigger-print" style="margin-top: 16px;">
+            <span>🖨️</span>
+            <span>ഈ പേജ് A4 ഷീറ്റിൽ പ്രിന്റ് ചെയ്യുക / സേവ് ചെയ്യുക</span>
+          </button>
+        </div>
+
+        <div class="cheatsheet-card">
+          <h3 class="cheatsheet-title">⚡ 1. RJ45 T-568B Quick Color Pinout Chart</h3>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Pin #</th>
+                  <th>Color (Wire)</th>
+                  <th>മലയാളം പേര്</th>
+                  <th>Signal Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>White-Orange</td><td>ഓറഞ്ച്-വെള്ള</td><td>Data TX+ (Transmit +)</td></tr>
+                <tr><td>2</td><td>Orange</td><td>ഓറഞ്ച്</td><td>Data TX- (Transmit -)</td></tr>
+                <tr><td>3</td><td>White-Green</td><td>പച്ച-വെള്ള</td><td>Data RX+ (Receive +)</td></tr>
+                <tr><td>4</td><td>Blue</td><td>നീല</td><td>PoE Power DC (+)</td></tr>
+                <tr><td>5</td><td>White-Blue</td><td>നീല-വെള്ള</td><td>PoE Power DC (+)</td></tr>
+                <tr><td>6</td><td>Green</td><td>പച്ച</td><td>Data RX- (Receive -)</td></tr>
+                <tr><td>7</td><td>White-Brown</td><td>തവിട്ട്-വെള്ള</td><td>PoE Ground DC (-)</td></tr>
+                <tr><td>8</td><td>Brown</td><td>തവിട്ട്</td><td>PoE Ground DC (-)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="cheatsheet-card">
+          <h3 class="cheatsheet-title">🌐 2. പ്രധാന നെറ്റ്‌വർക്ക് & CCTV പോർട്ട് നമ്പറുകൾ (Essential Ports)</h3>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>പോർട്ട് നമ്പർ</th>
+                  <th>പ്രോട്ടോക്കോൾ</th>
+                  <th>ഉപയോഗം (Role)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Port 80</strong></td><td>HTTP</td><td>ക്യാമറ / NVR വെബ് ബ്രൗസർ ഇന്റർഫേസ് കാണാൻ</td></tr>
+                <tr><td><strong>Port 443</strong></td><td>HTTPS</td><td>സെക്യൂർ എൻക്രിപ്റ്റഡ് വെബ് ലോഗിൻ</td></tr>
+                <tr><td><strong>Port 554</strong></td><td>RTSP</td><td>Real Time Streaming Protocol (വിഡിയോ ലൈവ് സ്ട്രീം)</td></tr>
+                <tr><td><strong>Port 8000</strong></td><td>Hikvision SDK</td><td>Hikvision NVR & iVMS-4200 മാനേജ്മെന്റ് പോർട്ട്</td></tr>
+                <tr><td><strong>Port 37777</strong></td><td>Dahua TCP</td><td>Dahua NVR & SmartPSS പ്രൈവറ്റ് പോർട്ട്</td></tr>
+                <tr><td><strong>Port 53</strong></td><td>DNS</td><td>ഡൊമൈൻ നെയിം റെസല്യൂഷൻ (Domain Lookup)</td></tr>
+                <tr><td><strong>Port 67 / 68</strong></td><td>DHCP</td><td>ഓട്ടോമാറ്റിക് ഐപി അഡ്രസ്സ് വിതരണം</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="cheatsheet-card">
+          <h3 class="cheatsheet-title">📏 3. പരമാവധി കേബിൾ ദൂര പരിധികൾ (Maximum Cable Limits)</h3>
+          <ul style="padding-left: 20px; line-height: 2;">
+            <li><strong>Cat6 / Cat5e Ethernet (LAN & PoE):</strong> പരമാവധി <strong>100 മീറ്റർ (328 അടി)</strong>.</li>
+            <li><strong>HDMI കേബിൾ (Passive):</strong> പരമാവധി <strong>15 മീറ്റർ</strong> (കൂടുതൽ ദൂരത്തിന് HDMI over Cat6 Extender വേണം).</li>
+            <li><strong>RG59 കോക്സിയൽ കേബിൾ:</strong> പരമാവധി <strong>300 മീറ്റർ</strong> (HD-TVI സിഗ്നലിന്).</li>
+            <li><strong>Multi-Mode ഫൈബർ (OM3):</strong> പരമാവധി <strong>300 - 550 മീറ്റർ</strong>.</li>
+            <li><strong>Single-Mode ഫൈബർ (OS2):</strong> <strong>10 കിലോമീറ്റർ മുതൽ 40 കി.മീ വരെ</strong>.</li>
+            <li><strong>USB 2.0 / 3.0 കേബിൾ:</strong> പരമാവധി <strong>3 മുതൽ 5 മീറ്റർ</strong>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 10: KNOWLEDGE QUIZ
+           ================================================================== -->
+      <section class="tab-section" id="section-quiz">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">സ്വയം വിലയിരുത്തൽ</span>
+            <span class="badge badge-green">15 ഇന്റർവ്യൂ ചോദ്യങ്ങൾ</span>
+          </div>
+          <h2>സെൽഫ് അസസ്‌മെന്റ് ക്വിസ് (Self-Assessment Quiz)</h2>
+          <p class="lead">
+            നിങ്ങൾ പഠിച്ച അറിവുകൾ പരീക്ഷിക്കാം! RJ45 കളർ കോഡ്, CCTV, ELV, കമ്പ്യൂട്ടർ ഹാർഡ്‌വെയർ എന്നിവയിലെ യഥാർത്ഥ ഫീൽഡ് ഇന്റർവ്യൂ ചോദ്യങ്ങൾ.
+          </p>
+        </div>
+
+        <div class="quiz-container">
+          <div class="quiz-header">
+            <span class="badge badge-cyan" id="quizProgress">ചോദ്യം 1 / 15</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">ഓരോ ഉത്തരത്തിനും തത്സമയ മലയാളം വിശദീകരണം</span>
+          </div>
+
+          <div class="quiz-question-box">
+            <h3 class="quiz-q-title" id="quizQTitle">ചോദ്യം ലോഡ് ചെയ്യുന്നു...</h3>
+            <div class="quiz-options-list" id="quizOptions">
+              <!-- Dynamically populated by app.js -->
+            </div>
+            <div class="quiz-explanation" id="quizExp">
+              <!-- Explanation text -->
+            </div>
+          </div>
+
+          <div class="quiz-nav-actions">
+            <button class="btn-secondary" id="quizPrevBtn">⬅️ മുൻപത്തെ ചോദ്യം</button>
+            <button class="btn-primary" id="quizNextBtn">അടുത്ത ചോദ്യം ➡️</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           MODULE 11: MALAYALAM IT & ELV GLOSSARY
+           ================================================================== -->
+      <section class="tab-section" id="section-glossary">
+        <div class="page-hero">
+          <div class="hero-meta">
+            <span class="badge badge-cyan">പദാവലി</span>
+            <span class="badge badge-purple">നിഘണ്ടു</span>
+          </div>
+          <h2>മലയാളം IT & ELV സാങ്കേതിക പദാവലി (Glossary)</h2>
+          <p class="lead">
+            നെറ്റ്‌വർക്കിംഗ്, സർവൈലൻസ്, കമ്പ്യൂട്ടർ ഹാർഡ്‌വെയർ മേഖലയിലെ പ്രധാനപ്പെട്ട സാങ്കേതിക പദങ്ങളുടെ അർത്ഥവും ലളിതമായ മലയാളം വിശദീകരണവും.
+          </p>
+        </div>
+
+        <div class="glossary-grid">
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">ELV (Extra Low Voltage)</span>
+              <span class="badge badge-cyan">ഇലക്ട്രിക്കൽ</span>
+            </div>
+            <p class="glossary-desc">50V AC അല്ലെങ്കിൽ 120V DC യിൽ താഴെ പ്രവർത്തിക്കുന്ന സുരക്ഷിതമായ ലോ കറന്റ് സിസ്റ്റങ്ങൾ (സിസിടിവി, ഡാറ്റ, ഫയർ അലാറം).</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">PoE (Power over Ethernet)</span>
+              <span class="badge badge-green">നെറ്റ്‌വർക്കിംഗ്</span>
+            </div>
+            <p class="glossary-desc">പ്രത്യേക പവർ കേബിൾ ഇല്ലാതെ Cat6 ലാൻ കേബിളിലൂടെ ക്യാമറയ്ക്കും ആക്സസ് പോയിന്റുകൾക്കും 48V DC കറന്റ് നൽകുന്ന സാങ്കേതികവിദ്യ.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">NVR (Network Video Recorder)</span>
+              <span class="badge badge-cyan">സിസിടിവി</span>
+            </div>
+            <p class="glossary-desc">ഐപി ക്യാമറകളിൽ നിന്നുള്ള ഡിജിറ്റൽ വീഡിയോകൾ നെറ്റ്‌വർക്ക് വഴി സ്വീകരിച്ച് ഹാർഡ് ഡിസ്കിൽ റെക്കോർഡ് ചെയ്യുന്ന ഉപകരണം.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">DVR (Digital Video Recorder)</span>
+              <span class="badge badge-cyan">സിസിടിവി</span>
+            </div>
+            <p class="glossary-desc">കോക്സിയൽ കേബിൾ വഴി വരുന്ന അനലോഗ് വീഡിയോ സിഗ്നലുകളെ ഡിജിറ്റൽ ഫോർമാറ്റാക്കി ഹാർഡ് ഡിസ്കിൽ സൂക്ഷിക്കുന്ന ഉപകരണം.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">Keystone Jack (I/O Box)</span>
+              <span class="badge badge-amber">കേബ്ലിംഗ്</span>
+            </div>
+            <p class="glossary-desc">ഭിത്തിയിലെ ഫേസ്പ്ലേറ്റിലും സെർവർ റാക്കിലെ പാച്ച് പാനലിലും Cat6 കേബിൾ പഞ്ച് ചെയ്ത് കണക്ട് ചെയ്യുന്ന ഫീമെയിൽ RJ45 സോക്കറ്റ്.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">EM Lock (Electromagnetic Lock)</span>
+              <span class="badge badge-purple">ആക്സസ് കൺട്രോൾ</span>
+            </div>
+            <p class="glossary-desc">വൈദ്യുതകാന്തിക ശക്തി ഉപയോഗിച്ച് 600-1200 പൗണ്ട് ബലത്തിൽ വാതിലുകൾ പൂട്ടിവെക്കുന്ന ഫെയിൽ-സേഫ് ലോക്ക്.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">SMPS (Power Supply Unit)</span>
+              <span class="badge badge-cyan">ഹാർഡ്‌വെയർ</span>
+            </div>
+            <p class="glossary-desc">കമ്പ്യൂട്ടറിലേക്ക് എസി കറന്റിനെ +12V, +5V, +3.3V ഡിസി കറന്റാക്കി നൽകുന്ന പവർ സപ്ലൈ യൂണിറ്റ്.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">NVMe SSD</span>
+              <span class="badge badge-green">സ്റ്റോറേജ്</span>
+            </div>
+            <p class="glossary-desc">മദർബോർഡിലെ PCIe ബസ്സിൽ നേരിട്ട് കണക്റ്റാകുന്ന 7000 MB/s വരെ അതിവേഗത നൽകുന്ന നോൺ-വോളറ്റൈൽ മെമ്മറി എക്സ്പ്രസ്സ് ഡ്രൈവ്.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">CR2032 Battery</span>
+              <span class="badge badge-amber">ഹാർഡ്‌വെയർ</span>
+            </div>
+            <p class="glossary-desc">മദർബോർഡിൽ സമയവും BIOS സെറ്റിംഗ്സുകളും നിലനിർത്താൻ ഉപയോഗിക്കുന്ന 3 വോൾട്ട് ലിഥിയം കോയിൻ ബാറ്ററി.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">ONVIF Protocol</span>
+              <span class="badge badge-purple">സിസിടിവി</span>
+            </div>
+            <p class="glossary-desc">വ്യത്യസ്ത കമ്പനികളുടെ ക്യാമറകളും NVR-കളും (ഉദാ: Hikvision ക്യാമറ Dahua NVR-ൽ) പരസ്പരം കണക്റ്റ് ചെയ്യാൻ സഹായിക്കുന്ന ആഗോള ഓപ്പൺ സ്റ്റാൻഡേർഡ്.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">H.265 / HEVC</span>
+              <span class="badge badge-cyan">കോഡെക്</span>
+            </div>
+            <p class="glossary-desc">ഹൈ എഫിഷ്യൻസി വീഡിയോ കോഡിംഗ്. H.264 നേക്കാൾ 50% കുറവ് ഹാർഡ് ഡിസ്ക് സ്പേസും നെറ്റ്‌വർക്ക് ബാൻഡ്‌വിഡ്ത്തും മാത്രം ഉപയോഗിക്കുന്ന കംപ്രഷൻ രീതി.</p>
+          </div>
+
+          <div class="glossary-card">
+            <div class="glossary-header">
+              <span class="glossary-term">Patch Panel</span>
+              <span class="badge badge-green">കേബ്ലിംഗ്</span>
+            </div>
+            <p class="glossary-desc">നെറ്റ്‌വർക്ക് റാക്കിനുള്ളിൽ ഘടിപ്പിക്കുന്ന 24 അല്ലെങ്കിൽ 48 പോർട്ട് ബോർഡ്. എല്ലാ ഫ്ലോർ കേബിളുകളും ക്രമമായി അവസാനിപ്പിക്കാൻ ഉപയോഗിക്കുന്നു.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+      <p style="margin: 0; font-weight: 700; color: var(--text-main); font-size: 1.05rem;">
+        ⚡ Ajmal Network Academy | അജ്മൽ നെറ്റ്‌വർക്ക് അക്കാദമി
+      </p>
+      <p style="margin: 0; font-size: 0.88rem; color: var(--text-muted);">
+        ഔദ്യോഗിക YouTube ചാനൽ: <a href="https://www.youtube.com/channel/UCQuK-60lo7wk4iojdClBKbw" target="_blank" rel="noopener noreferrer" style="color: #ff4d4d; font-weight: 700;">UCQuK-60lo7wk4iojdClBKbw</a>
+      </p>
+      <p style="margin: 0; font-size: 0.78rem; color: var(--text-dim);">
+        ELV സിസ്റ്റങ്ങൾ, നെറ്റ്‌വർക്കിംഗ്, സിസിടിവി ക്യാമറ ഇൻസ്റ്റാളേഷൻ, RJ45 ക്രിമ്പിംഗ്, കീസ്റ്റോൺ പഞ്ച് ഡൗൺ & കമ്പ്യൂട്ടർ ഹാർഡ്‌വെയർ സമ്പൂർണ്ണ മലയാളം ലേണിംഗ് പ്ലാറ്റ്‌ഫോം.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
